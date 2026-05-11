@@ -5,394 +5,301 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Padyar Takuk | Contemporary Persian Takuk / Rhyton by Hadi Hafezi</title>
-  <meta name="description" content="Padyar Takuk revives takuk, the Persian word for rhyton, as contemporary seamless one-piece hand-shaped Persian metalwork created by Hadi Hafezi in Isfahan, Iran." />
-  <meta name="keywords" content="rhyton, Persian rhyton, takuk, Persian takuk, takuk rhyton, contemporary Persian rhyton, Persian metalwork, seamless metalwork, hand-shaped metalwork, Hadi Hafezi, Padyar Takuk, Isfahan metalwork" />
+  <meta name="description" content="Padyar Takuk revives takuk, the Persian word for rhyton, as contemporary seamless one-piece hand-shaped Persian metalwork by Hadi Hafezi in Isfahan." />
+  <meta name="keywords" content="rhyton, Persian rhyton, takuk, Persian takuk, takuk rhyton, contemporary Persian rhyton, Persian metalwork, Hadi Hafezi, Padyar Takuk, Isfahan metalwork" />
   <meta name="author" content="Hadi Hafezi, Padyar Takuk" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://padyartakuk.github.io/" />
+  <link rel="icon" type="image/png" href="padyar-takuk-icon.png" />
+  <link rel="apple-touch-icon" href="padyar-takuk-icon.png" />
 
   <meta property="og:title" content="Padyar Takuk | Contemporary Persian Takuk / Rhyton" />
   <meta property="og:description" content="Contemporary Persian takuk/rhyton works shaped by hand from metal by Hadi Hafezi in Isfahan, Iran." />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Padyar Takuk" />
   <meta property="og:url" content="https://padyartakuk.github.io/" />
+  <meta property="og:site_name" content="Padyar Takuk" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Padyar Takuk | Contemporary Persian Takuk / Rhyton" />
-  <meta name="twitter:description" content="Contemporary Persian takuk/rhyton works shaped by hand from metal by Hadi Hafezi in Isfahan, Iran." />
 
   <style>
     :root {
-      --bg: #0d0b08;
-      --panel: #17130d;
-      --panel-soft: #211a11;
-      --text: #f4efe5;
-      --muted: #c9bda7;
-      --gold: #c99a3d;
-      --gold-soft: #ead09a;
-      --line: rgba(201,154,61,0.35);
-      --shadow: rgba(0,0,0,0.35);
+      --bg: #090806;
+      --bg-soft: #0f0c08;
+      --panel: rgba(28, 21, 13, 0.70);
+      --panel-strong: rgba(35, 27, 17, 0.86);
+      --text: #f5efe3;
+      --muted: #cabda4;
+      --quiet: #9d8e72;
+      --gold: #CCA325;
+      --gold-light: #ead39a;
+      --line: rgba(204, 163, 37, 0.28);
+      --line-soft: rgba(204, 163, 37, 0.13);
+      --shadow: rgba(0, 0, 0, 0.48);
       --max: 1120px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(201,154,61,0.10), transparent 34rem),
-        radial-gradient(circle at bottom right, rgba(201,154,61,0.07), transparent 36rem),
-        var(--bg);
-      color: var(--text);
-      line-height: 1.65;
+        radial-gradient(circle at 18% 4%, rgba(204,163,37,0.10), transparent 25rem),
+        radial-gradient(circle at 86% 16%, rgba(204,163,37,0.06), transparent 22rem),
+        linear-gradient(180deg, #0d0a07 0%, #090806 44%, #0d0a07 100%);
+      line-height: 1.56;
     }
 
-    a {
-      color: var(--gold-soft);
-      text-decoration: none;
+    body:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(204,163,37,0.035), transparent 18%, transparent 82%, rgba(204,163,37,0.03)),
+        radial-gradient(circle at center, transparent 0, transparent 44%, rgba(0,0,0,0.20) 100%);
+      z-index: -1;
     }
 
-    a:hover {
-      color: var(--text);
-    }
+    a { color: var(--gold-light); text-decoration: none; }
+    a:hover { color: var(--text); }
 
     .wrap {
-      width: min(var(--max), calc(100% - 32px));
+      width: min(var(--max), calc(100% - 34px));
       margin: 0 auto;
     }
 
     header {
       position: sticky;
       top: 0;
-      z-index: 20;
-      background: rgba(13,11,8,0.86);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--line);
+      z-index: 30;
+      background: rgba(9, 8, 6, 0.84);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line-soft);
     }
 
-    .nav {
-      display: flex;
+    .topbar {
+      min-height: 70px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
       align-items: center;
-      justify-content: space-between;
-      min-height: 72px;
-      gap: 22px;
+      padding: 9px 0 8px;
     }
 
-    .brand {
+    .logo-mark {
+      width: 43px;
+      height: 43px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 7px 18px rgba(204,163,37,0.16));
+    }
+
+    .brandline {
       display: flex;
       flex-direction: column;
-      gap: 2px;
+      gap: 1px;
+      min-width: 0;
     }
 
-    .brand strong {
-      color: var(--gold-soft);
-      letter-spacing: 0.06em;
-      font-size: 1.05rem;
+    .brandline strong {
+      color: var(--gold-light);
       text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-size: 0.98rem;
+      line-height: 1.05;
     }
 
-    .brand span {
+    .brandline span {
       color: var(--muted);
-      font-size: 0.86rem;
+      font-size: 0.82rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .navlinks {
+      grid-column: 1 / -1;
       display: flex;
-      align-items: center;
-      gap: 18px;
-      flex-wrap: wrap;
-      font-size: 0.95rem;
+      gap: 15px;
+      overflow-x: auto;
+      padding-top: 6px;
+      scrollbar-width: none;
+      font-size: 0.90rem;
+      white-space: nowrap;
     }
 
-    .navlinks a {
-      color: var(--muted);
-    }
+    .navlinks::-webkit-scrollbar { display: none; }
+    .navlinks a { color: var(--muted); }
+    .navlinks a:hover { color: var(--gold-light); }
 
-    .navlinks a:hover {
-      color: var(--gold-soft);
+    section {
+      padding: 72px 0;
+      border-bottom: 1px solid var(--line-soft);
+      scroll-margin-top: 112px;
     }
 
     .hero {
-      padding: 98px 0 72px;
-      border-bottom: 1px solid var(--line);
+      padding: 62px 0 76px;
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 40px;
+      align-items: center;
     }
 
     .kicker {
-      color: var(--gold-soft);
+      color: var(--gold-light);
       text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.82rem;
-      margin-bottom: 14px;
+      letter-spacing: 0.20em;
+      font-size: 0.72rem;
+      margin-bottom: 16px;
     }
 
     h1, h2, h3 {
-      line-height: 1.15;
       margin: 0;
       font-weight: 500;
+      line-height: 1.10;
     }
 
     h1 {
-      font-size: clamp(2.35rem, 7vw, 5.25rem);
-      max-width: 980px;
-      letter-spacing: -0.035em;
+      font-size: clamp(2.18rem, 5.2vw, 4.65rem);
+      letter-spacing: -0.045em;
+      max-width: 850px;
     }
 
-    .hero p {
+    h2 {
+      font-size: clamp(1.9rem, 4vw, 3.25rem);
+      letter-spacing: -0.03em;
+    }
+
+    h3 {
+      font-size: clamp(1.18rem, 2.3vw, 1.72rem);
+    }
+
+    p {
       color: var(--muted);
-      font-size: clamp(1.05rem, 2vw, 1.35rem);
-      max-width: 820px;
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      margin: 0 0 15px;
+    }
+
+    .lead {
+      margin-top: 24px;
+      max-width: 720px;
+      font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+    }
+
+    .fine-line {
+      width: 72px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.68;
       margin: 28px 0 0;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 36px;
+      gap: 12px;
+      margin-top: 30px;
     }
 
     .button {
+      min-height: 43px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-height: 46px;
-      padding: 0 18px;
-      border: 1px solid var(--gold);
+      padding: 0 17px;
+      border: 1px solid rgba(204,163,37,0.76);
       border-radius: 999px;
+      background: rgba(204,163,37,0.07);
       color: var(--text);
-      background: rgba(201,154,61,0.08);
-      box-shadow: 0 12px 34px var(--shadow);
+      box-shadow: 0 14px 38px var(--shadow);
+      font-size: 0.95rem;
     }
 
     .button.secondary {
-      border-color: rgba(244,239,229,0.28);
-      color: var(--muted);
       background: transparent;
+      border-color: rgba(245,239,227,0.20);
+      color: var(--muted);
     }
 
-    section {
-      padding: 76px 0;
-      border-bottom: 1px solid rgba(201,154,61,0.18);
+    .hero-visual, .image-stage {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 50% 38%, rgba(204,163,37,0.12), transparent 29rem),
+        linear-gradient(180deg, rgba(35, 28, 18, 0.70), rgba(9, 8, 6, 0.80));
+      box-shadow: 0 28px 80px var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-visual {
+      min-height: 440px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .hero-visual img {
+      max-width: 100%;
+      max-height: 520px;
+      object-fit: contain;
+      display: block;
+      border-radius: 18px;
     }
 
     .section-head {
       display: grid;
-      grid-template-columns: 0.9fr 1.5fr;
+      grid-template-columns: 0.86fr 1.14fr;
       gap: 34px;
       align-items: start;
       margin-bottom: 34px;
     }
 
-    .section-head h2 {
-      font-size: clamp(1.8rem, 4vw, 3.1rem);
-      letter-spacing: -0.025em;
-    }
-
     .section-head p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1.07rem;
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
     }
 
-    .panel {
-      background: linear-gradient(180deg, rgba(33,26,17,0.92), rgba(23,19,13,0.92));
+    .quiet-panel {
       border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 28px;
-      box-shadow: 0 22px 60px var(--shadow);
+      background:
+        linear-gradient(180deg, rgba(35, 27, 17, 0.68), rgba(16, 12, 8, 0.72));
+      border-radius: 26px;
+      padding: clamp(23px, 4vw, 36px);
+      box-shadow: 0 18px 54px var(--shadow);
     }
 
-    .grid-2 {
+    .two-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 22px;
+      gap: 18px;
     }
 
-    .grid-3 {
+    .three-col {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
+      gap: 16px;
     }
 
     .small-card {
-      background: rgba(13,11,8,0.35);
-      border: 1px solid rgba(201,154,61,0.22);
-      border-radius: 18px;
-      padding: 20px;
+      border: 1px solid rgba(204,163,37,0.22);
+      border-radius: 22px;
+      background: rgba(9,8,6,0.28);
+      padding: 23px;
     }
 
     .small-card h3 {
-      color: var(--gold-soft);
-      margin-bottom: 10px;
+      color: var(--gold-light);
       font-size: 1.16rem;
+      margin-bottom: 10px;
     }
 
     .small-card p {
-      color: var(--muted);
-      margin: 0;
       font-size: 0.98rem;
-    }
-
-    .feature-work {
-      display: grid;
-      grid-template-columns: 0.9fr 1.1fr;
-      gap: 30px;
-      align-items: stretch;
-    }
-
-    .image-box {
-      min-height: 360px;
-      border-radius: 24px;
-      border: 1px solid var(--line);
-      background:
-        linear-gradient(135deg, rgba(201,154,61,0.16), rgba(244,239,229,0.04)),
-        #090806;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .image-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .image-placeholder {
-      padding: 34px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.96rem;
-    }
-
-    .image-placeholder strong {
-      display: block;
-      color: var(--gold-soft);
-      margin-bottom: 8px;
-      font-size: 1.15rem;
-    }
-
-    .work-text h3 {
-      font-size: clamp(1.55rem, 3.2vw, 2.55rem);
-      margin-bottom: 16px;
-    }
-
-    .work-text p {
-      color: var(--muted);
-      margin: 0 0 18px;
-    }
-
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .tag {
-      border: 1px solid rgba(201,154,61,0.38);
-      background: rgba(201,154,61,0.08);
-      color: var(--gold-soft);
-      border-radius: 999px;
-      padding: 6px 11px;
-      font-size: 0.86rem;
-    }
-
-    .works-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .work-card {
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      overflow: hidden;
-      background: rgba(23,19,13,0.78);
-      box-shadow: 0 16px 42px var(--shadow);
-    }
-
-    .work-card .thumb {
-      height: 210px;
-      background:
-        linear-gradient(135deg, rgba(201,154,61,0.18), rgba(244,239,229,0.04)),
-        #0a0907;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--muted);
-      text-align: center;
-      padding: 18px;
-      border-bottom: 1px solid rgba(201,154,61,0.22);
-    }
-
-    .work-card img {
-      width: 100%;
-      height: 210px;
-      object-fit: cover;
-      display: block;
-      border-bottom: 1px solid rgba(201,154,61,0.22);
-    }
-
-    .work-card-content {
-      padding: 18px;
-    }
-
-    .work-card h3 {
-      color: var(--gold-soft);
-      font-size: 1.08rem;
-      margin-bottom: 9px;
-    }
-
-    .work-card p {
       margin: 0;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: 0.94rem;
-      margin-top: 18px;
-    }
-
-    .contact {
-      text-align: center;
-    }
-
-    .contact h2 {
-      font-size: clamp(1.9rem, 4vw, 3.25rem);
-      margin-bottom: 18px;
-    }
-
-    .contact p {
-      color: var(--muted);
-      max-width: 720px;
-      margin: 0 auto 28px;
-    }
-
-    footer {
-      padding: 32px 0;
-      color: rgba(201,189,167,0.78);
-      font-size: 0.9rem;
-    }
-
-    .footer-grid {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-      border-top: 1px solid rgba(201,154,61,0.18);
-      padding-top: 22px;
     }
 
     .persian {
@@ -401,41 +308,218 @@
       font-family: Georgia, "Times New Roman", serif;
     }
 
-    @media (max-width: 880px) {
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 16px 0;
+    .feature {
+      display: grid;
+      grid-template-columns: 0.96fr 1.04fr;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .image-stage {
+      min-height: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .image-stage img {
+      width: 100%;
+      max-height: 560px;
+      object-fit: contain;
+      display: block;
+      border-radius: 18px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 17px;
+    }
+
+    .tag {
+      border: 1px solid rgba(204,163,37,0.34);
+      color: var(--gold-light);
+      background: rgba(204,163,37,0.07);
+      border-radius: 999px;
+      padding: 6px 11px;
+      font-size: 0.84rem;
+    }
+
+    .works-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .work-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 25px;
+      background: rgba(22, 17, 11, 0.76);
+      box-shadow: 0 20px 58px var(--shadow);
+    }
+
+    .work-card figure {
+      margin: 0;
+      min-height: 248px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border-bottom: 1px solid var(--line-soft);
+      background:
+        radial-gradient(circle at center, rgba(204,163,37,0.08), transparent 16rem),
+        rgba(255,255,255,0.015);
+    }
+
+    .work-card img {
+      width: 100%;
+      height: 245px;
+      object-fit: contain;
+      display: block;
+      border-radius: 15px;
+    }
+
+    .work-card-content {
+      padding: 19px;
+    }
+
+    .work-card h3 {
+      color: var(--gold-light);
+      font-size: 1.1rem;
+      margin-bottom: 9px;
+    }
+
+    .work-card p {
+      font-size: 0.94rem;
+      margin: 0;
+    }
+
+    .auth-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .contact {
+      text-align: center;
+      padding-bottom: 92px;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer {
+      padding: 30px 0;
+      color: rgba(202,189,164,0.76);
+      font-size: 0.88rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line-soft);
+      padding-top: 22px;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .section-head, .two-col, .three-col, .feature, .works-grid, .auth-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        min-height: 58px;
+        gap: 9px;
+        padding: 7px 0 6px;
+      }
+
+      .logo-mark {
+        width: 35px;
+        height: 35px;
+      }
+
+      .brandline strong {
+        font-size: 0.88rem;
+        letter-spacing: 0.10em;
+      }
+
+      .brandline span {
+        font-size: 0.74rem;
       }
 
       .navlinks {
         gap: 12px;
-        font-size: 0.9rem;
-      }
-
-      .section-head,
-      .grid-2,
-      .grid-3,
-      .feature-work,
-      .works-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 68px 0 54px;
+        font-size: 0.80rem;
+        padding-top: 4px;
       }
 
       section {
-        padding: 56px 0;
+        padding: 54px 0;
+        scroll-margin-top: 92px;
       }
 
-      .image-box {
-        min-height: 260px;
+      .hero {
+        padding: 42px 0 58px;
+        gap: 27px;
       }
 
-      .work-card .thumb,
+      .hero-visual {
+        min-height: 310px;
+        padding: 17px;
+      }
+
+      .image-stage {
+        min-height: 335px;
+        padding: 15px;
+      }
+
+      .work-card figure {
+        min-height: 226px;
+      }
+
       .work-card img {
-        height: 240px;
+        height: 226px;
+      }
+
+      .quiet-panel {
+        border-radius: 22px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        width: min(var(--max), calc(100% - 28px));
+      }
+
+      h1 {
+        font-size: clamp(2.05rem, 11.4vw, 3.1rem);
+      }
+
+      h2 {
+        font-size: clamp(1.85rem, 9.6vw, 2.55rem);
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .brandline span {
+        max-width: 245px;
       }
     }
   </style>
@@ -448,7 +532,7 @@
   "name": "Padyar Takuk",
   "url": "https://padyartakuk.github.io/",
   "email": "hafzyhady348@gmail.com",
-  "description": "Padyar Takuk revives takuk, the Persian word for rhyton, as contemporary seamless one-piece hand-shaped Persian metalwork created in Isfahan, Iran.",
+  "description": "Padyar Takuk revives takuk, the Persian word for rhyton, as contemporary seamless one-piece hand-shaped Persian metalwork created by Hadi Hafezi in Isfahan, Iran.",
   "founder": {
     "@type": "Person",
     "@id": "https://padyartakuk.github.io/#hadi-hafezi",
@@ -463,44 +547,46 @@
     "@type": "PostalAddress",
     "addressLocality": "Isfahan",
     "addressCountry": "IR"
-  },
-  "sameAs": [
-    "https://www.youtube.com/@padyartakuk"
-  ]
+  }
 }
   </script>
 </head>
 
 <body>
   <header>
-    <div class="wrap nav">
-      <div class="brand">
+    <div class="wrap topbar">
+      <img class="logo-mark" src="padyar-takuk-logo-symbol-gold.png" alt="Padyar Takuk logo symbol" />
+      <div class="brandline">
         <strong>Padyar Takuk</strong>
         <span>Contemporary Persian Takuk / Rhyton · Isfahan</span>
       </div>
       <nav class="navlinks" aria-label="Main navigation">
-        <a href="#takuk">Takuk / Rhyton</a>
+        <a href="#takuk">Takuk</a>
         <a href="#process">Process</a>
-        <a href="#parseh">Bull of Parseh</a>
+        <a href="#parseh">Parseh</a>
         <a href="#works">Works</a>
-        <a href="#documentation">Documentation</a>
-        <a href="#contact">Private Inquiry</a>
+        <a href="#documentation">Authenticity</a>
+        <a href="#contact">Inquiry</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="wrap">
+    <section class="wrap hero">
+      <div>
         <div class="kicker">Rare contemporary Persian collectible metalwork</div>
-        <h1>Contemporary Persian Takuk / Rhyton, shaped by hand in Isfahan.</h1>
-        <p>
-          Padyar Takuk revives <em>takuk</em>, the Persian word for rhyton, as seamless one-piece hand-shaped Persian metalwork created by Hadi Hafezi in Isfahan, Iran.
+        <h1>Takuk / Rhyton, revived through the hand.</h1>
+        <p class="lead">
+          Padyar Takuk is the contemporary Persian takuk/rhyton practice of Hadi Hafezi in Isfahan — a quiet revival of vessel, animal form, ritual memory and seamless hand-shaped metalwork.
         </p>
+        <div class="fine-line"></div>
         <div class="hero-actions">
-          <a class="button" href="#takuk">Understand Takuk / Rhyton</a>
-          <a class="button secondary" href="#works">View Selected Works</a>
+          <a class="button" href="#takuk">Discover the Form</a>
+          <a class="button secondary" href="#works">View Works</a>
         </div>
+      </div>
+      <div class="hero-visual" aria-label="Guardian Falcon hero image">
+        <img src="guardian-falcon-contemporary-persian-takuk-rhyton-padyar-takuk.jpg" alt="Guardian Falcon, a contemporary Persian takuk/rhyton hand-shaped by Hadi Hafezi for Padyar Takuk in Isfahan, Iran." />
       </div>
     </section>
 
@@ -508,49 +594,17 @@
       <div class="wrap">
         <div class="section-head">
           <h2>What Is a Takuk / Rhyton?</h2>
-          <p>
-            Before it is a vessel, a takuk is a symbolic body — a form where sculpture, animal presence, ritual memory and metalwork become one.
-          </p>
+          <p>A takuk is not merely a vessel. It is a symbolic body — where sculpture, animal presence, movement and meaning become one.</p>
         </div>
-
-        <div class="grid-2">
-          <div class="panel">
-            <p>
-              <strong>Takuk is the Persian word for rhyton</strong>, one of the most evocative vessel forms of the ancient world. An ordinary cup holds liquid. A takuk transforms liquid into movement, ceremony and meaning.
-            </p>
-            <p>
-              The drink does not simply rest inside the object; it passes through a sculptural body — often animal-like, protective, powerful or ceremonial. This is why a takuk/rhyton should not be understood as a decorative cup.
-            </p>
+        <div class="two-col">
+          <div class="quiet-panel">
+            <p><strong>Takuk is the Persian word for rhyton.</strong> An ordinary cup holds liquid; a takuk transforms it into a ceremonial passage through form.</p>
+            <p>In Padyar Takuk, this vessel language continues as contemporary artwork — not copied, not archaeological, and not presented as an antiquity.</p>
           </div>
-
-          <div class="panel persian" lang="fa">
-            <p>
-              <strong>تکوک، واژه فارسی ریتون،</strong> پیش از آن‌که ظرف باشد، یک بدن نمادین است؛ فرمی که در آن جانور، آیین، حرکت مایع، مجسمه و فلزکاری در یک پیکره واحد جمع می‌شوند.
-            </p>
-            <p>
-              در یک جام معمولی، مایع فقط نگهداری می‌شود. اما در تکوک/ریتون، مایع از میان یک فرم پیکره‌وار عبور می‌کند؛ فرمی که می‌تواند یادآور جانور نمادین، نگهبانی، شکوه، آیین یا قدرت باشد.
-            </p>
+          <div class="quiet-panel persian" lang="fa">
+            <p><strong>تکوک، واژه فارسی ریتون است.</strong> تکوک فقط ظرف نیست؛ بدنی نمادین است که در آن جانور، آیین، حرکت مایع، مجسمه و فلزکاری در یک پیکره جمع می‌شوند.</p>
+            <p>آثار پادیار تکوک معاصرند؛ عتیقه، شیء باستان‌شناسی یا کپی تاریخی نیستند.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="revival">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>A Contemporary Revival, Not a Historical Replica</h2>
-          <p>
-            Padyar Takuk does not present antiquities, archaeological objects or historical replicas.
-          </p>
-        </div>
-
-        <div class="panel">
-          <p>
-            Its works are contemporary artworks created by Hadi Hafezi in Isfahan, Iran. They are inspired by the language, memory and dignity of the takuk/rhyton form, but they are not copies of ancient objects.
-          </p>
-          <p>
-            The aim is not to reproduce the past, but to continue a Persian form through the hand, imagination and discipline of a contemporary artist-maker.
-          </p>
         </div>
       </div>
     </section>
@@ -558,31 +612,13 @@
     <section id="process">
       <div class="wrap">
         <div class="section-head">
-          <h2>Why the Making Process Matters</h2>
-          <p>
-            In Padyar Takuk, value is not measured only by material, weight or surface beauty. It is also measured by the risk of making and the discipline of the hand.
-          </p>
+          <h2>Why the Making Matters</h2>
+          <p>The value is not only in material or surface beauty. It is in risk, control, discipline and the ability to keep a complex animal-vessel form coherent as one body.</p>
         </div>
-
-        <div class="grid-3">
-          <div class="small-card">
-            <h3>One-Piece Body</h3>
-            <p>Each work is approached as a unified metal body, where vessel, animal form, balance and surface must remain coherent.</p>
-          </div>
-          <div class="small-card">
-            <h3>No Molds or Welding</h3>
-            <p>The works are shaped without molds, welding, seams, assembled parts or industrial production methods.</p>
-          </div>
-          <div class="small-card">
-            <h3>Controlled Risk</h3>
-            <p>The artist must control thickness, proportion, pressure, animal identity, structural strength and surface detail at the same time.</p>
-          </div>
-        </div>
-
-        <div class="panel" style="margin-top:22px;">
-          <p>
-            This technical difficulty is part of the value. In Padyar Takuk, the worth of the work is measured by the risk of making, the discipline of the hand, the control of metal, and the ability to keep a complex animal-vessel form coherent as one body.
-          </p>
+        <div class="three-col">
+          <div class="small-card"><h3>One-Piece Body</h3><p>Vessel, animal form, balance and surface must remain unified.</p></div>
+          <div class="small-card"><h3>No Molds or Welding</h3><p>Shaped without molds, welding, seams, assembled parts or industrial production methods.</p></div>
+          <div class="small-card"><h3>Controlled Risk</h3><p>Thickness, proportion, pressure, structure and identity must be controlled together.</p></div>
         </div>
       </div>
     </section>
@@ -590,33 +626,18 @@
     <section id="parseh">
       <div class="wrap">
         <div class="section-head">
-          <h2>The Bull of Parseh Takuk / Rhyton</h2>
-          <p>
-            A bridge work for understanding the takuk/rhyton form within the current Padyar Takuk collection.
-          </p>
+          <h2>The Bull of Parseh</h2>
+          <p>A bridge work for understanding the takuk/rhyton form within the current Padyar Takuk collection.</p>
         </div>
-
-        <div class="feature-work">
-          <div class="image-box">
-            <img
-              src="bull-of-parseh-persian-rhyton-padyar-takuk.jpg"
-              alt="The Bull of Parseh, a contemporary Persian takuk/rhyton by Hadi Hafezi, inspired by Parseh and Achaemenid bull forms, Padyar Takuk, Isfahan."
-              loading="lazy"
-            />
+        <div class="feature">
+          <div class="image-stage">
+            <img src="bull-of-parseh-persian-rhyton-padyar-takuk.jpg" alt="The Bull of Parseh, a contemporary Persian takuk/rhyton by Hadi Hafezi, inspired by Parseh and Achaemenid bull forms, Padyar Takuk, Isfahan." />
           </div>
-
-          <div class="panel work-text">
+          <div class="quiet-panel">
             <h3>The Bull of Parseh / تکوک گاو پارسه</h3>
-            <p>
-              The Bull of Parseh is one of the clearest works in the current collection for communicating the takuk/rhyton form. Its trumpet-like upper vessel form, architectural presence and bull reference help viewers understand how vessel, sculpture and symbolic animal form can become one body.
-            </p>
-            <p>
-              The work is inspired by Parseh / Persepolis and by the ceremonial presence of Achaemenid bull forms. These references are interpretive and contemporary; they are not archaeological or documentary claims, and the work is not a historical replica.
-            </p>
-            <p>
-              Its role on the website is to help visitors move from the idea of takuk/rhyton to the visual language of Padyar Takuk.
-            </p>
-            <div class="meta">
+            <p>With its trumpet-like vessel form and architectural bull presence, this work helps viewers understand how vessel, sculpture and symbolic animal form can become one body.</p>
+            <p>Its references to Parseh / Persepolis and Achaemenid bull forms are interpretive and contemporary. They are not archaeological claims, and the work is not a historical replica.</p>
+            <div class="tags">
               <span class="tag">Contemporary artwork</span>
               <span class="tag">Takuk / Rhyton form</span>
               <span class="tag">Parseh-inspired</span>
@@ -631,64 +652,30 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Selected Works</h2>
-          <p>
-            The selected works should be seen as contemporary Persian takuk/rhyton works carrying cultural memory, technical risk and the personal hand of Hadi Hafezi.
-          </p>
+          <p>Four contemporary Persian takuk/rhyton works carrying cultural memory, technical risk and the personal hand of Hadi Hafezi.</p>
         </div>
 
         <div class="works-grid">
           <article class="work-card">
-            <img
-              src="guardian-falcon-contemporary-persian-takuk-rhyton-padyar-takuk.jpg"
-              alt="Guardian Falcon, a contemporary Persian takuk/rhyton hand-shaped by Hadi Hafezi for Padyar Takuk in Isfahan, Iran."
-              loading="lazy"
-            />
-            <div class="work-card-content">
-              <h3>Guardian Falcon</h3>
-              <p>A museum-oriented work centered on protection, symbolic presence and hand-shaped Persian metalwork.</p>
-            </div>
+            <figure><img src="guardian-falcon-contemporary-persian-takuk-rhyton-padyar-takuk.jpg" alt="Guardian Falcon, a contemporary Persian takuk/rhyton hand-shaped by Hadi Hafezi for Padyar Takuk in Isfahan, Iran." /></figure>
+            <div class="work-card-content"><h3>Guardian Falcon</h3><p>A museum-oriented work centered on protection, symbolic presence and hand-shaped Persian metalwork.</p></div>
           </article>
 
           <article class="work-card">
-            <img
-              src="bull-of-parseh-persian-rhyton-padyar-takuk.jpg"
-              alt="The Bull of Parseh, a contemporary Persian takuk/rhyton by Hadi Hafezi, Padyar Takuk, Isfahan."
-              loading="lazy"
-            />
-            <div class="work-card-content">
-              <h3>The Bull of Parseh</h3>
-              <p>A contemporary Parseh-inspired takuk/rhyton work that helps clarify the vessel-animal form.</p>
-            </div>
+            <figure><img src="bull-of-parseh-persian-rhyton-padyar-takuk.jpg" alt="The Bull of Parseh, a contemporary Persian takuk/rhyton by Hadi Hafezi, Padyar Takuk, Isfahan." /></figure>
+            <div class="work-card-content"><h3>The Bull of Parseh</h3><p>A Parseh-inspired takuk/rhyton work that clarifies the vessel-animal form.</p></div>
           </article>
 
           <article class="work-card">
-            <img
-              src="pride-of-pars-contemporary-persian-metalwork-padyar-takuk.jpg"
-              alt="Pride of Pars / Immortal Guard Horse, a contemporary Persian metalwork takuk/rhyton work by Hadi Hafezi, Padyar Takuk."
-              loading="lazy"
-            />
-            <div class="work-card-content">
-              <h3>Pride of Pars</h3>
-              <p>A powerful horse-form work positioned between ceremonial presence, movement and Persian symbolic memory.</p>
-            </div>
+            <figure><img src="pride-of-pars-contemporary-persian-metalwork-padyar-takuk.jpg" alt="Pride of Pars / Immortal Guard Horse, a contemporary Persian metalwork takuk/rhyton work by Hadi Hafezi, Padyar Takuk." /></figure>
+            <div class="work-card-content"><h3>Pride of Pars</h3><p>A horse-form work positioned between ceremonial presence, movement and Persian symbolic memory.</p></div>
           </article>
 
           <article class="work-card">
-            <img
-              src="golden-hare-persian-takuk-rhyton-hadi-hafezi.jpg"
-              alt="Golden Hare / Queen's Cup, a small collectible contemporary Persian takuk/rhyton by Hadi Hafezi, Padyar Takuk."
-              loading="lazy"
-            />
-            <div class="work-card-content">
-              <h3>Golden Hare / Queen’s Cup</h3>
-              <p>A small collectible takuk/rhyton work whose 0.4 mm metal thickness reveals the technical delicacy of the making process.</p>
-            </div>
+            <figure><img src="golden-hare-persian-takuk-rhyton-hadi-hafezi.jpg" alt="Golden Hare / Queen's Cup, a small collectible contemporary Persian takuk/rhyton by Hadi Hafezi, Padyar Takuk." /></figure>
+            <div class="work-card-content"><h3>Golden Hare / Queen’s Cup</h3><p>A small collectible work whose 0.4 mm metal thickness reveals technical delicacy.</p></div>
           </article>
         </div>
-
-        <p class="note">
-          Images in this draft are web-safe corrected versions prepared for public website display.
-        </p>
       </div>
     </section>
 
@@ -696,28 +683,16 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Authenticity & Documentation</h2>
-          <p>
-            Padyar Takuk uses clear contemporary-art language to avoid confusion with antiquities or archaeological objects.
-          </p>
+          <p>Clear contemporary-art language protects the works from confusion with antiquities or archaeological objects.</p>
         </div>
-
-        <div class="grid-2">
-          <div class="panel">
-            <p>
-              The works are contemporary artworks. They are not antiquities, archaeological objects, or historical replicas.
-            </p>
-            <p>
-              Each work may be accompanied by an artwork sheet, certificate of authenticity and not-antiquity statement when prepared for private review, exhibition or collector presentation.
-            </p>
+        <div class="auth-grid">
+          <div class="quiet-panel">
+            <p>The works are contemporary artworks. They are not antiquities, archaeological objects, or historical replicas.</p>
+            <p>For private review, exhibition or collector presentation, a work may be accompanied by an artwork sheet, certificate of authenticity and not-antiquity statement.</p>
           </div>
-
-          <div class="panel persian" lang="fa">
-            <p>
-              آثار پادیار تکوک آثار معاصر هستند؛ عتیقه، شیء باستان‌شناسی یا کپی تاریخی نیستند.
-            </p>
-            <p>
-              هر اثر می‌تواند برای ارائه خصوصی، نمایشگاهی یا کلکسیونی با شناسنامه اثر، گواهی اصالت و بیانیه غیرعتیقه بودن همراه شود.
-            </p>
+          <div class="quiet-panel persian" lang="fa">
+            <p>آثار پادیار تکوک آثار معاصر هستند؛ عتیقه، شیء باستان‌شناسی یا کپی تاریخی نیستند.</p>
+            <p>هر اثر می‌تواند برای ارائه خصوصی، نمایشگاهی یا کلکسیونی با شناسنامه اثر، گواهی اصالت و بیانیه غیرعتیقه بودن همراه شود.</p>
           </div>
         </div>
       </div>
@@ -726,9 +701,7 @@
     <section id="contact" class="contact">
       <div class="wrap">
         <h2>Private Inquiry</h2>
-        <p>
-          For curatorial, gallery, collector or cultural inquiries, please contact Padyar Takuk directly. Prices are provided upon private inquiry and after review of context, destination, documentation and presentation needs.
-        </p>
+        <p>Curatorial, gallery, collector and cultural inquiries are reviewed individually according to context, destination, documentation and presentation needs.</p>
         <a class="button" href="mailto:hafzyhady348@gmail.com">hafzyhady348@gmail.com</a>
       </div>
     </section>
