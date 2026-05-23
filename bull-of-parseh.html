@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Bull of Parseh | Padyar Takuk</title>
+  <meta name="description" content="The Bull of Parseh is a contemporary Persian takuk/rhyton artwork by Hadi Hafezi in Isfahan, presented within the Padyar Takuk virtual gallery as a seamless one-piece hand-shaped animal-vessel work inspired by Parseh, not an antiquity or historical replica." />
+  <meta name="keywords" content="Bull of Parseh, تکوک گاو پارسه, Padyar Takuk, Persian takuk, Persian rhyton, contemporary Persian metalwork, Hadi Hafezi, Isfahan metalwork, animal vessel, Parseh, Persepolis inspired artwork, Achaemenid bull inspiration, hand-shaped metalwork" />
+  <meta name="author" content="Hadi Hafezi, Padyar Takuk" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://padyartakuk.github.io/bull-of-parseh.html" />
+  <link rel="icon" type="image/png" href="padyar-takuk-icon.png" />
+  <link rel="apple-touch-icon" href="padyar-takuk-icon.png" />
+
+  <meta property="og:title" content="The Bull of Parseh | Padyar Takuk" />
+  <meta property="og:description" content="A contemporary Persian animal-vessel artwork by Hadi Hafezi, shaped by hand in Isfahan and inspired by the ceremonial architectural memory of Parseh." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://padyartakuk.github.io/bull-of-parseh.html" />
+  <meta property="og:site_name" content="Padyar Takuk" />
+  <meta property="og:image" content="https://padyartakuk.github.io/bull-of-parseh-persian-rhyton-padyar-takuk.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --bg: #070604;
+      --bg2: #0d0905;
+      --panel: rgba(22, 16, 9, 0.74);
+      --panel2: rgba(35, 25, 13, 0.82);
+      --text: #f5efe3;
+      --muted: #c7b896;
+      --quiet: #958665;
+      --gold: #CCA325;
+      --gold2: #ecd89a;
+      --line: rgba(204, 163, 37, 0.25);
+      --line2: rgba(204, 163, 37, 0.11);
+      --shadow: rgba(0, 0, 0, 0.58);
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -9%, rgba(204,163,37,0.16), transparent 34rem),
+        radial-gradient(circle at 90% 18%, rgba(204,163,37,0.07), transparent 30rem),
+        linear-gradient(180deg, #0d0905 0%, #070604 45%, #0e0a05 100%);
+      line-height: 1.55;
+    }
+
+    body:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(204,163,37,0.032), transparent 22%, transparent 78%, rgba(204,163,37,0.026)),
+        radial-gradient(circle at center, transparent 0, transparent 46%, rgba(0,0,0,0.30) 100%);
+      z-index: -1;
+    }
+
+    a { color: var(--gold2); text-decoration: none; }
+    a:hover { color: var(--text); }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 34px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(7, 6, 4, 0.86);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line2);
+    }
+
+    .topbar {
+      min-height: 70px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 13px;
+      align-items: center;
+      padding: 8px 0;
+    }
+
+    .logo-mark {
+      width: 39px;
+      height: 39px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 18px rgba(204,163,37,0.18));
+    }
+
+    .brandline strong {
+      display: block;
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.96rem;
+      line-height: 1.05;
+    }
+
+    .brandline span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.80rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    nav {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-top: 6px;
+      scrollbar-width: none;
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+
+    nav::-webkit-scrollbar { display: none; }
+    nav a { color: var(--muted); }
+
+    .hero {
+      min-height: calc(100vh - 70px);
+      display: grid;
+      grid-template-columns: 0.86fr 1.14fr;
+      gap: 46px;
+      align-items: center;
+      padding: 58px 0 72px;
+      border-bottom: 1px solid var(--line2);
+    }
+
+    .kicker {
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.69rem;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.08;
+    }
+
+    h1 {
+      font-size: clamp(2.35rem, 6vw, 5.1rem);
+      letter-spacing: -0.058em;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4.8vw, 3.65rem);
+      letter-spacing: -0.045em;
+    }
+
+    h3 { font-size: clamp(1.16rem, 2vw, 1.55rem); }
+
+    p {
+      color: var(--muted);
+      font-size: clamp(1rem, 1.72vw, 1.12rem);
+      margin: 0 0 15px;
+    }
+
+    strong { color: var(--text); font-weight: 500; }
+
+    .lead {
+      margin-top: 24px;
+      max-width: 650px;
+      font-size: clamp(1.08rem, 2vw, 1.28rem);
+    }
+
+    .guard-line {
+      margin-top: 16px;
+      color: var(--gold2);
+      font-size: 0.94rem;
+      letter-spacing: 0.035em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 31px;
+    }
+
+    .button {
+      min-height: 43px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid rgba(204,163,37,0.76);
+      border-radius: 999px;
+      background: rgba(204,163,37,0.08);
+      color: var(--text);
+      box-shadow: 0 16px 42px var(--shadow);
+      font-size: 0.95rem;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border-color: rgba(245,239,227,0.18);
+      color: var(--muted);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 575px;
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(204,163,37,0.15), transparent 30rem),
+        linear-gradient(180deg, rgba(38, 28, 15, 0.78), rgba(8, 6, 4, 0.88));
+      box-shadow: 0 34px 94px var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+    }
+
+    .hero-visual img {
+      max-width: 100%;
+      max-height: 620px;
+      object-fit: contain;
+      border-radius: 22px;
+      display: block;
+    }
+
+    .hero-caption {
+      position: absolute;
+      left: 24px;
+      bottom: 19px;
+      right: 24px;
+      color: rgba(245,239,227,0.67);
+      font-size: 0.78rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .chapter {
+      padding: 88px 0;
+      border-bottom: 1px solid var(--line2);
+    }
+
+    .chapter-head {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 38px;
+      align-items: start;
+      margin-bottom: 35px;
+    }
+
+    .chapter-number {
+      color: var(--gold2);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-size: 0.70rem;
+      margin-bottom: 14px;
+    }
+
+    .large-text {
+      font-size: clamp(1.16rem, 2.2vw, 1.47rem);
+      color: var(--text);
+      line-height: 1.48;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: clamp(24px, 4vw, 38px);
+      background: linear-gradient(180deg, var(--panel2), rgba(13, 9, 5, 0.78));
+      box-shadow: 0 20px 60px var(--shadow);
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .detail-card {
+      border: 1px solid rgba(204,163,37,0.20);
+      border-radius: 26px;
+      background: rgba(24,18,10,0.52);
+      padding: 22px;
+      min-height: 178px;
+    }
+
+    .detail-card span {
+      display: block;
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.68rem;
+      margin-bottom: 10px;
+    }
+
+    .detail-card p {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    .persian {
+      direction: rtl;
+      text-align: right;
+    }
+
+    .image-room {
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(204,163,37,0.11), transparent 27rem),
+        linear-gradient(180deg, rgba(34,25,14,0.70), rgba(9,7,4,0.80));
+      padding: clamp(18px, 4vw, 36px);
+      box-shadow: 0 24px 70px var(--shadow);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 560px;
+    }
+
+    .image-room img {
+      max-width: 100%;
+      max-height: 700px;
+      object-fit: contain;
+      border-radius: 24px;
+    }
+
+    .quote {
+      color: var(--gold2);
+      font-size: clamp(1.12rem, 2.1vw, 1.45rem);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    footer {
+      padding: 30px 0;
+      color: rgba(200,185,155,0.76);
+      font-size: 0.88rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line2);
+      padding-top: 22px;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .chapter-head, .detail-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 46px;
+      }
+
+      .hero-visual, .image-room {
+        min-height: 350px;
+        padding: 16px;
+      }
+
+      .chapter {
+        padding: 62px 0;
+      }
+
+      .topbar {
+        min-height: 58px;
+        gap: 9px;
+        padding: 7px 0 6px;
+      }
+
+      .logo-mark {
+        width: 35px;
+        height: 35px;
+      }
+
+      .brandline strong {
+        font-size: 0.88rem;
+        letter-spacing: 0.10em;
+      }
+
+      .brandline span {
+        font-size: 0.74rem;
+      }
+
+      nav {
+        gap: 12px;
+        font-size: 0.80rem;
+        padding-top: 4px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        width: min(var(--max), calc(100% - 28px));
+      }
+
+      h1 {
+        font-size: clamp(2.1rem, 12vw, 3.35rem);
+      }
+
+      h2 {
+        font-size: clamp(1.9rem, 9.5vw, 2.75rem);
+      }
+
+      p { font-size: 1rem; }
+
+      .button { width: 100%; }
+
+      .brandline span { max-width: 245px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "@id": "https://padyartakuk.github.io/bull-of-parseh.html#artwork",
+  "name": "The Bull of Parseh",
+  "alternateName": "تکوک گاو پارسه",
+  "url": "https://padyartakuk.github.io/bull-of-parseh.html",
+  "image": "https://padyartakuk.github.io/bull-of-parseh-persian-rhyton-padyar-takuk.jpg",
+  "creator": {
+    "@type": "Person",
+    "name": "Hadi Hafezi",
+    "jobTitle": "Artist-maker and metalworker",
+    "workLocation": {
+      "@type": "Place",
+      "name": "Isfahan, Iran"
+    }
+  },
+  "artform": "Contemporary Persian takuk/rhyton metalwork",
+  "artMedium": "Hand-shaped metalwork",
+  "description": "The Bull of Parseh is a contemporary Persian animal-vessel artwork by Hadi Hafezi in Isfahan, inspired by the ceremonial architectural memory of Parseh. It is not an antiquity, archaeological object or historical replica.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Padyar Takuk Virtual Gallery",
+    "url": "https://padyartakuk.github.io/"
+  }
+}
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap topbar">
+      <img class="logo-mark" src="padyar-takuk-lion-logo-gold-clean.png" alt="Padyar Takuk gold lion logo" />
+      <div class="brandline">
+        <strong>Padyar Takuk</strong>
+        <span>Contemporary Persian Takuk / Rhyton · Isfahan</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#works">Gallery</a>
+        <a href="index.html#making">Making</a>
+        <a href="index.html#documentation">Documentation</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="kicker">Virtual Gallery · Gallery Focus</div>
+        <h1>The Bull of Parseh</h1>
+        <p class="lead">
+          A contemporary Persian takuk/rhyton work by Hadi Hafezi, shaped in Isfahan as an animal-vessel body inspired by the ceremonial architectural memory of Parseh.
+        </p>
+        <p class="guard-line">Contemporary artwork. Not an antiquity. Not an archaeological object. Not a historical replica.</p>
+        <div class="hero-actions">
+          <a class="button" href="#viewing-room">View the Work</a>
+          <a class="button secondary" href="index.html#works">Return to Gallery</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="bull-of-parseh-persian-rhyton-padyar-takuk.jpg" alt="The Bull of Parseh, a contemporary Persian takuk/rhyton animal-vessel artwork by Hadi Hafezi for Padyar Takuk in Isfahan." />
+        <div class="hero-caption">The Bull of Parseh · Contemporary Persian Takuk / Rhyton</div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">01 · Curatorial Note</div>
+            <h2>Animal, vessel and architectural memory</h2>
+          </div>
+          <div class="panel">
+            <p class="large-text">
+              The Bull of Parseh is one of the clearest works for understanding the visual language of Padyar Takuk. The bull is not treated as ornament; it becomes the structural and symbolic presence of the vessel itself.
+            </p>
+            <p>
+              The work draws from the ceremonial memory of Parseh — known globally through Persepolis — where architecture, animal form, column capitals and imperial visual language meet in a disciplined sense of presence. In this contemporary takuk/rhyton, that memory is not copied. It is re-entered through hand-shaped metal, proportion, silence and animal force.
+            </p>
+            <p>
+              The result is a work that stands between sculpture and vessel: a contemporary animal-vessel body carrying the gravity of the bull, the discipline of metal and the restrained dignity of Persian architectural memory.
+            </p>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <span>Form</span>
+            <p>Animal-vessel body: bull, vessel and sculptural presence held within one continuous visual language.</p>
+          </div>
+          <div class="detail-card">
+            <span>Memory</span>
+            <p>Inspired by Parseh and the Achaemenid bull-capital imagination, without claiming to reproduce a historical object.</p>
+          </div>
+          <div class="detail-card">
+            <span>Practice</span>
+            <p>Part of Hadi Hafezi’s Padyar Takuk practice in Isfahan, focused on hand-shaped metal and symbolic form.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="viewing-room">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">02 · Viewing Room</div>
+            <h2>A quiet encounter with the work</h2>
+          </div>
+          <p>
+            The viewing room keeps the work in a gallery-like context. The image is allowed to carry presence, surface, shadow and proportion without turning the page into a commercial listing.
+          </p>
+        </div>
+
+        <div class="image-room">
+          <img src="bull-of-parseh-persian-rhyton-padyar-takuk.jpg" alt="The Bull of Parseh shown in the Padyar Takuk virtual gallery viewing room." />
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">03 · Technical Language</div>
+            <h2>One body, shaped by hand</h2>
+          </div>
+          <div class="panel">
+            <p class="large-text">
+              In Padyar Takuk, the value of the work is not only in the final image. It is also in the discipline required to keep animal, vessel and sculptural body unified.
+            </p>
+            <p>
+              The Padyar Takuk practice is defined by seamless one-piece hand-shaped metalwork: the work begins from metal and is shaped through the pressure, patience and control of the hand, without reducing the animal-vessel form to assembled decorative parts.
+            </p>
+            <p class="quote">
+              The object is not a decorative cup. It is a body of metal where animal presence, vessel memory and Persian form become one.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">04 · فارسی</div>
+            <h2>تکوک گاو پارسه</h2>
+          </div>
+          <div class="panel persian" lang="fa">
+            <p class="large-text">
+              تکوک گاو پارسه یکی از روشن‌ترین آثار برای شناخت زبان پادیار تکوک است؛ جایی که گاو فقط نقش تزئینی نیست، بلکه به حضور نمادین و بدنیِ ظرف تبدیل می‌شود.
+            </p>
+            <p>
+              این اثر از حافظه تشریفاتی پارسه الهام می‌گیرد؛ از جهانی که در آن معماری، سرستون‌های گاو، وقار آیینی و زبان تصویری هخامنشی در کنار هم معنا می‌سازند. اما تکوک گاو پارسه کپی یک شیء تاریخی نیست. این اثر، خوانشی معاصر از آن حضور است؛ خوانشی که از مسیر دست، فلز، تناسب، سکوت و نیروی جانوری شکل می‌گیرد.
+            </p>
+            <p>
+              در این اثر، ظرف و پیکره از هم جدا نیستند. گاو، بدن ظرف را معنا می‌کند و ظرف، حضور گاو را به یک تکوک معاصر تبدیل می‌کند. نتیجه، اثری است میان مجسمه، ظرف، حافظه معماری ایران و زبان زنده فلزکاری معاصر.
+            </p>
+            <p>
+              این اثر عتیقه، شیء باستان‌شناسی، کپی تاریخی یا بازسازی موزه‌ای نیست. هدف آن تکرار گذشته نیست؛ بلکه ادامه دادن زبان تکوک/ریتون ایرانی در قالب اثری معاصر، دست‌ساخته و دارای هویت هنری مستقل است.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">05 · Documentation</div>
+            <h2>Authenticity and review context</h2>
+          </div>
+          <div class="panel">
+            <p>
+              Padyar Takuk works are presented through contemporary-art language and careful documentation. When prepared for private professional review, documentation may include an artwork sheet, certificate of authenticity, not-antiquity statement and process evidence where documented.
+            </p>
+            <p>
+              The essential clarification remains constant: this is a newly created contemporary artwork by Hadi Hafezi in Isfahan, not an antiquity, archaeological object or historical replica.
+            </p>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="index.html#works">Return to Virtual Gallery</a>
+          <a class="button secondary" href="index.html#contact">Professional Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>© Padyar Takuk · Hadi Hafezi · Isfahan, Iran</div>
+      <div>Contemporary Persian takuk/rhyton · Seamless one-piece hand-shaped metalwork</div>
+    </div>
+  </footer>
+</body>
+</html>
