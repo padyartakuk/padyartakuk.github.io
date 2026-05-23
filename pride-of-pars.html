@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pride of Pars | Padyar Takuk</title>
+  <meta name="description" content="Pride of Pars / Immortal Guard Horse is a contemporary Persian takuk/rhyton artwork by Hadi Hafezi in Isfahan, presented within the Padyar Takuk virtual gallery as a hand-shaped animal-vessel work of horse-form movement, ceremonial presence and Persian symbolic memory." />
+  <meta name="keywords" content="Pride of Pars, Immortal Guard Horse, Padyar Takuk, Persian takuk, Persian rhyton, contemporary Persian metalwork, Hadi Hafezi, Isfahan metalwork, horse form, animal vessel, hand-shaped metalwork" />
+  <meta name="author" content="Hadi Hafezi, Padyar Takuk" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://padyartakuk.github.io/pride-of-pars.html" />
+  <link rel="icon" type="image/png" href="padyar-takuk-icon.png" />
+  <link rel="apple-touch-icon" href="padyar-takuk-icon.png" />
+
+  <meta property="og:title" content="Pride of Pars | Padyar Takuk" />
+  <meta property="og:description" content="A contemporary Persian horse-form animal-vessel artwork by Hadi Hafezi, shaped by hand in Isfahan as part of the Padyar Takuk virtual gallery." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://padyartakuk.github.io/pride-of-pars.html" />
+  <meta property="og:site_name" content="Padyar Takuk" />
+  <meta property="og:image" content="https://padyartakuk.github.io/pride-of-pars-contemporary-persian-metalwork-padyar-takuk.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --bg: #070604;
+      --bg2: #0d0905;
+      --panel: rgba(22, 16, 9, 0.74);
+      --panel2: rgba(35, 25, 13, 0.82);
+      --text: #f5efe3;
+      --muted: #c7b896;
+      --quiet: #958665;
+      --gold: #CCA325;
+      --gold2: #ecd89a;
+      --line: rgba(204, 163, 37, 0.25);
+      --line2: rgba(204, 163, 37, 0.11);
+      --shadow: rgba(0, 0, 0, 0.58);
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 50% -9%, rgba(204,163,37,0.16), transparent 34rem),
+        radial-gradient(circle at 90% 18%, rgba(204,163,37,0.07), transparent 30rem),
+        linear-gradient(180deg, #0d0905 0%, #070604 45%, #0e0a05 100%);
+      line-height: 1.55;
+    }
+
+    body:before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(204,163,37,0.032), transparent 22%, transparent 78%, rgba(204,163,37,0.026)),
+        radial-gradient(circle at center, transparent 0, transparent 46%, rgba(0,0,0,0.30) 100%);
+      z-index: -1;
+    }
+
+    a { color: var(--gold2); text-decoration: none; }
+    a:hover { color: var(--text); }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 34px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(7, 6, 4, 0.86);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line2);
+    }
+
+    .topbar {
+      min-height: 70px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 13px;
+      align-items: center;
+      padding: 8px 0;
+    }
+
+    .logo-mark {
+      width: 39px;
+      height: 39px;
+      object-fit: contain;
+      filter: drop-shadow(0 8px 18px rgba(204,163,37,0.18));
+    }
+
+    .brandline strong {
+      display: block;
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.96rem;
+      line-height: 1.05;
+    }
+
+    .brandline span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.80rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    nav {
+      grid-column: 1 / -1;
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-top: 6px;
+      scrollbar-width: none;
+      font-size: 0.88rem;
+      white-space: nowrap;
+    }
+
+    nav::-webkit-scrollbar { display: none; }
+    nav a { color: var(--muted); }
+
+    .hero {
+      min-height: calc(100vh - 70px);
+      display: grid;
+      grid-template-columns: 0.86fr 1.14fr;
+      gap: 46px;
+      align-items: center;
+      padding: 58px 0 72px;
+      border-bottom: 1px solid var(--line2);
+    }
+
+    .kicker {
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      font-size: 0.69rem;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.08;
+    }
+
+    h1 {
+      font-size: clamp(2.35rem, 6vw, 5.1rem);
+      letter-spacing: -0.058em;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4.8vw, 3.65rem);
+      letter-spacing: -0.045em;
+    }
+
+    h3 { font-size: clamp(1.16rem, 2vw, 1.55rem); }
+
+    p {
+      color: var(--muted);
+      font-size: clamp(1rem, 1.72vw, 1.12rem);
+      margin: 0 0 15px;
+    }
+
+    strong { color: var(--text); font-weight: 500; }
+
+    .lead {
+      margin-top: 24px;
+      max-width: 650px;
+      font-size: clamp(1.08rem, 2vw, 1.28rem);
+    }
+
+    .guard-line {
+      margin-top: 16px;
+      color: var(--gold2);
+      font-size: 0.94rem;
+      letter-spacing: 0.035em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 31px;
+    }
+
+    .button {
+      min-height: 43px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid rgba(204,163,37,0.76);
+      border-radius: 999px;
+      background: rgba(204,163,37,0.08);
+      color: var(--text);
+      box-shadow: 0 16px 42px var(--shadow);
+      font-size: 0.95rem;
+    }
+
+    .button.secondary {
+      background: transparent;
+      border-color: rgba(245,239,227,0.18);
+      color: var(--muted);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 575px;
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(204,163,37,0.15), transparent 30rem),
+        linear-gradient(180deg, rgba(38, 28, 15, 0.78), rgba(8, 6, 4, 0.88));
+      box-shadow: 0 34px 94px var(--shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+    }
+
+    .hero-visual img {
+      max-width: 100%;
+      max-height: 620px;
+      object-fit: contain;
+      border-radius: 22px;
+      display: block;
+    }
+
+    .hero-caption {
+      position: absolute;
+      left: 24px;
+      bottom: 19px;
+      right: 24px;
+      color: rgba(245,239,227,0.67);
+      font-size: 0.78rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .chapter {
+      padding: 88px 0;
+      border-bottom: 1px solid var(--line2);
+    }
+
+    .chapter-head {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: 38px;
+      align-items: start;
+      margin-bottom: 35px;
+    }
+
+    .chapter-number {
+      color: var(--gold2);
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-size: 0.70rem;
+      margin-bottom: 14px;
+    }
+
+    .large-text {
+      font-size: clamp(1.16rem, 2.2vw, 1.47rem);
+      color: var(--text);
+      line-height: 1.48;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      padding: clamp(24px, 4vw, 38px);
+      background: linear-gradient(180deg, var(--panel2), rgba(13, 9, 5, 0.78));
+      box-shadow: 0 20px 60px var(--shadow);
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 26px;
+    }
+
+    .detail-card {
+      border: 1px solid rgba(204,163,37,0.20);
+      border-radius: 26px;
+      background: rgba(24,18,10,0.52);
+      padding: 22px;
+      min-height: 178px;
+    }
+
+    .detail-card span {
+      display: block;
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.68rem;
+      margin-bottom: 10px;
+    }
+
+    .detail-card p {
+      margin: 0;
+      font-size: 0.98rem;
+    }
+
+    .persian {
+      direction: rtl;
+      text-align: right;
+    }
+
+    .image-room {
+      border: 1px solid var(--line);
+      border-radius: 36px;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(204,163,37,0.11), transparent 27rem),
+        linear-gradient(180deg, rgba(34,25,14,0.70), rgba(9,7,4,0.80));
+      padding: clamp(18px, 4vw, 36px);
+      box-shadow: 0 24px 70px var(--shadow);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 560px;
+    }
+
+    .image-room img {
+      max-width: 100%;
+      max-height: 700px;
+      object-fit: contain;
+      border-radius: 24px;
+    }
+
+    .quote {
+      color: var(--gold2);
+      font-size: clamp(1.12rem, 2.1vw, 1.45rem);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    footer {
+      padding: 30px 0;
+      color: rgba(200,185,155,0.76);
+      font-size: 0.88rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line2);
+      padding-top: 22px;
+    }
+
+    @media (max-width: 900px) {
+      .hero, .chapter-head, .detail-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding-top: 46px;
+      }
+
+      .hero-visual, .image-room {
+        min-height: 350px;
+        padding: 16px;
+      }
+
+      .chapter {
+        padding: 62px 0;
+      }
+
+      .topbar {
+        min-height: 58px;
+        gap: 9px;
+        padding: 7px 0 6px;
+      }
+
+      .logo-mark {
+        width: 35px;
+        height: 35px;
+      }
+
+      .brandline strong {
+        font-size: 0.88rem;
+        letter-spacing: 0.10em;
+      }
+
+      .brandline span {
+        font-size: 0.74rem;
+      }
+
+      nav {
+        gap: 12px;
+        font-size: 0.80rem;
+        padding-top: 4px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .wrap {
+        width: min(var(--max), calc(100% - 28px));
+      }
+
+      h1 {
+        font-size: clamp(2.1rem, 12vw, 3.35rem);
+      }
+
+      h2 {
+        font-size: clamp(1.9rem, 9.5vw, 2.75rem);
+      }
+
+      p { font-size: 1rem; }
+
+      .button { width: 100%; }
+
+      .brandline span { max-width: 245px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "@id": "https://padyartakuk.github.io/pride-of-pars.html#artwork",
+  "name": "Pride of Pars",
+  "alternateName": "Immortal Guard Horse",
+  "url": "https://padyartakuk.github.io/pride-of-pars.html",
+  "image": "https://padyartakuk.github.io/pride-of-pars-contemporary-persian-metalwork-padyar-takuk.jpg",
+  "creator": {
+    "@type": "Person",
+    "name": "Hadi Hafezi",
+    "jobTitle": "Artist-maker and metalworker",
+    "workLocation": {
+      "@type": "Place",
+      "name": "Isfahan, Iran"
+    }
+  },
+  "artform": "Contemporary Persian takuk/rhyton metalwork",
+  "artMedium": "Hand-shaped metalwork",
+  "description": "Pride of Pars / Immortal Guard Horse is a contemporary Persian animal-vessel artwork by Hadi Hafezi in Isfahan. It is not an antiquity, archaeological object or historical replica.",
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Padyar Takuk Virtual Gallery",
+    "url": "https://padyartakuk.github.io/"
+  }
+}
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap topbar">
+      <img class="logo-mark" src="padyar-takuk-lion-logo-gold-clean.png" alt="Padyar Takuk gold lion logo" />
+      <div class="brandline">
+        <strong>Padyar Takuk</strong>
+        <span>Contemporary Persian Takuk / Rhyton · Isfahan</span>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#works">Gallery</a>
+        <a href="index.html#making">Making</a>
+        <a href="index.html#documentation">Documentation</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="kicker">Virtual Gallery · Gallery Work</div>
+        <h1>Pride of Pars</h1>
+        <p class="lead">
+          A contemporary Persian horse-form takuk/rhyton work by Hadi Hafezi, shaped in Isfahan as an animal-vessel body of movement, guardianship and symbolic memory.
+        </p>
+        <p class="guard-line">Contemporary artwork. Not an antiquity. Not an archaeological object. Not a historical replica.</p>
+        <div class="hero-actions">
+          <a class="button" href="#viewing-room">View the Work</a>
+          <a class="button secondary" href="index.html#works">Return to Gallery</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="pride-of-pars-contemporary-persian-metalwork-padyar-takuk.jpg" alt="Pride of Pars / Immortal Guard Horse, a contemporary Persian horse-form takuk/rhyton animal-vessel artwork by Hadi Hafezi for Padyar Takuk in Isfahan." />
+        <div class="hero-caption">Pride of Pars · Immortal Guard Horse</div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">01 · Curatorial Note</div>
+            <h2>Horse-form movement and ceremonial presence</h2>
+          </div>
+          <div class="panel">
+            <p class="large-text">
+              Pride of Pars carries the horse not as decoration, but as a body of movement, vigilance and symbolic authority. Within the Padyar Takuk practice, the horse becomes a vessel of presence: alert, forward-moving and protective.
+            </p>
+            <p>
+              The work belongs to a contemporary Persian animal-vessel language. It does not reproduce an ancient object; instead, it gathers memory, motion and metal into a form that can be encountered as both sculpture and takuk/rhyton.
+            </p>
+            <p>
+              Its force is not loud. It is held in posture, contour, restraint and the quiet tension between animal body and vessel body.
+            </p>
+          </div>
+        </div>
+
+        <div class="detail-grid">
+          <div class="detail-card">
+            <span>Form</span>
+            <p>Horse-form animal-vessel body: movement, vessel memory and sculptural presence held together.</p>
+          </div>
+          <div class="detail-card">
+            <span>Symbol</span>
+            <p>A work of guardianship, nobility and forward motion within the contemporary language of Padyar Takuk.</p>
+          </div>
+          <div class="detail-card">
+            <span>Practice</span>
+            <p>Part of Hadi Hafezi’s Isfahan-based practice in hand-shaped metal and contemporary Persian takuk/rhyton form.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="viewing-room">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">02 · Viewing Room</div>
+            <h2>A quiet encounter with the work</h2>
+          </div>
+          <p>
+            The viewing room keeps the horse-form work in a gallery-like context, allowing the image to carry silhouette, direction, proportion and presence without turning the page into a commercial listing.
+          </p>
+        </div>
+
+        <div class="image-room">
+          <img src="pride-of-pars-contemporary-persian-metalwork-padyar-takuk.jpg" alt="Pride of Pars / Immortal Guard Horse shown in the Padyar Takuk virtual gallery viewing room." />
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">03 · Technical Language</div>
+            <h2>Animal and vessel as one discipline</h2>
+          </div>
+          <div class="panel">
+            <p class="large-text">
+              In Padyar Takuk, the horse is not added to a vessel; the animal and the vessel must be read as one body.
+            </p>
+            <p>
+              This is the central difficulty of the takuk/rhyton form: movement, volume, surface, symbolic identity and vessel logic must remain unified. The work asks the eye to move from animal presence to vessel memory without separating one from the other.
+            </p>
+            <p class="quote">
+              Pride of Pars is a study in motion held still: a horse-form presence shaped into the silence of metal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">04 · فارسی</div>
+            <h2>فخر پارس / اسب نگهبان جاودان</h2>
+          </div>
+          <div class="panel persian" lang="fa">
+            <p class="large-text">
+              فخر پارس اثری معاصر از زبان پادیار تکوک است؛ اثری که در آن اسب فقط نقش تزئینی ندارد، بلکه به حضور، حرکت، نگهبانی و شأن نمادین تبدیل می‌شود.
+            </p>
+            <p>
+              در این اثر، اسب و ظرف از هم جدا نیستند. پیکره جانوری، حافظه ظرف را حمل می‌کند و ظرف، حضور اسب را به زبان تکوک/ریتون نزدیک می‌سازد. نگاه مخاطب میان حرکت، وقار، فرم جانوری و سکوت فلز حرکت می‌کند.
+            </p>
+            <p>
+              فخر پارس عتیقه، شیء باستان‌شناسی، کپی تاریخی یا بازسازی موزه‌ای نیست. این اثر خوانشی معاصر از پیکره جانور-ظرف ایرانی است؛ خوانشی که از مسیر دست، فلز، تناسب و حافظه نمادین شکل گرفته است.
+            </p>
+            <p>
+              نیروی اثر در فریاد نیست؛ در ایستایی، جهت، کشش فرم و وقار خاموش اسب است.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">05 · Documentation</div>
+            <h2>Authenticity and review context</h2>
+          </div>
+          <div class="panel">
+            <p>
+              Padyar Takuk works are presented through contemporary-art language and careful documentation. When prepared for private professional review, documentation may include an artwork sheet, certificate of authenticity, not-antiquity statement and process evidence where documented.
+            </p>
+            <p>
+              The essential clarification remains constant: this is a newly created contemporary artwork by Hadi Hafezi in Isfahan, not an antiquity, archaeological object or historical replica.
+            </p>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="index.html#works">Return to Virtual Gallery</a>
+          <a class="button secondary" href="index.html#contact">Professional Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>© Padyar Takuk · Hadi Hafezi · Isfahan, Iran</div>
+      <div>Contemporary Persian takuk/rhyton · Seamless one-piece hand-shaped metalwork</div>
+    </div>
+  </footer>
+</body>
+</html>
