@@ -547,6 +547,33 @@
       gap: 18px;
     }
 
+    .documentation-context {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 18px;
+      align-items: center;
+      margin-top: 18px;
+    }
+
+    .document-image {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      overflow: hidden;
+      background: rgba(24,18,10,0.52);
+      box-shadow: 0 20px 60px var(--shadow);
+    }
+
+    .document-image img {
+      width: 100%;
+      display: block;
+    }
+
+    .document-note {
+      font-size: 0.88rem;
+      color: var(--quiet);
+      margin-top: 10px;
+    }
+
     .contact {
       text-align: center;
       padding-bottom: 96px;
@@ -586,7 +613,7 @@
     }
 
     @media (max-width: 900px) {
-      .hero, .chapter-head, .triad, .making-strip, .works-layout, .artist-doc, .strip-grid {
+      .hero, .chapter-head, .triad, .making-strip, .works-layout, .artist-doc, .documentation-context, .strip-grid {
         grid-template-columns: 1fr;
       }
 
@@ -963,9 +990,28 @@
           </div>
         </div>
 
+        <div class="documentation-context">
+          <div class="panel">
+            <h3>Isfahan metalwork context</h3>
+            <p>
+              The Padyar Takuk practice is rooted in Isfahan’s long metalworking environment. The WIPO Lisbon registration context for Qalamzani Isfahan is included here as cultural and regional background for Isfahan metalwork.
+            </p>
+            <p>
+              This context image does not certify an individual Padyar Takuk artwork. It is presented only to clarify the wider artistic and technical environment from which the practice emerges.
+            </p>
+            <p class="document-note">
+              Documentation image: WIPO Lisbon registration context for Qalamzani Isfahan.
+            </p>
+          </div>
+
+          <figure class="document-image">
+            <img src="wipo-isfahan-qalamzani-readable.jpg" alt="WIPO Lisbon registration context for Qalamzani Isfahan, presented as cultural background for Isfahan metalwork within Padyar Takuk documentation." />
+          </figure>
+        </div>
+
         <details>
-          <summary>فارسی / توضیح کوتاه اصالت</summary>
-          <p class="persian" lang="fa">آثار پادیار تکوک آثار معاصر هستند؛ عتیقه، شیء باستان‌شناسی، کپی تاریخی یا بازسازی موزه‌ای نیستند. هدف، تکثیر گذشته نیست؛ ادامه دادن زبان تکوک/ریتون ایرانی از طریق دست، تخیل و انضباط یک هنرمند-سازنده معاصر است.</p>
+          <summary>فارسی / توضیح کوتاه اصالت و زمینه</summary>
+          <p class="persian" lang="fa">آثار پادیار تکوک آثار معاصر هستند؛ عتیقه، شیء باستان‌شناسی، کپی تاریخی یا بازسازی موزه‌ای نیستند. سند زمینه‌ای وایپو برای قلمزنی اصفهان در این بخش فقط برای توضیح بستر فرهنگی و فنی فلزکاری اصفهان آمده است و گواهی مستقیم برای هیچ اثر مشخص پادیار تکوک محسوب نمی‌شود.</p>
         </details>
       </div>
     </section>
