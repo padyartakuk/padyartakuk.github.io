@@ -338,6 +338,73 @@
       box-shadow: 0 20px 60px var(--shadow);
     }
 
+    .reference-block {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 0;
+      align-items: stretch;
+      margin: 28px 0 32px;
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(35,25,13,0.78), rgba(9,7,4,0.72));
+      box-shadow: 0 20px 60px var(--shadow);
+    }
+
+    .reference-image {
+      margin: 0;
+      min-height: 330px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px;
+      border-right: 1px solid var(--line2);
+      background:
+        radial-gradient(circle at center, rgba(204,163,37,0.10), transparent 22rem),
+        rgba(255,255,255,0.018);
+    }
+
+    .reference-image img {
+      width: 100%;
+      max-height: 430px;
+      object-fit: contain;
+      border-radius: 22px;
+      display: block;
+    }
+
+    .reference-content {
+      padding: clamp(24px, 4vw, 38px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .reference-content span {
+      display: block;
+      color: var(--gold2);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.68rem;
+      margin-bottom: 12px;
+    }
+
+    .reference-content h3 {
+      color: var(--text);
+      font-size: clamp(1.35rem, 2.5vw, 2.05rem);
+      margin-bottom: 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .reference-content p {
+      font-size: 0.98rem;
+    }
+
+    .reference-note {
+      color: var(--quiet);
+      font-size: 0.86rem !important;
+      margin-top: 4px;
+    }
+
     .persian {
       direction: rtl;
       text-align: right;
@@ -613,7 +680,7 @@
     }
 
     @media (max-width: 900px) {
-      .hero, .chapter-head, .triad, .making-strip, .works-layout, .artist-doc, .documentation-context, .strip-grid {
+      .hero, .chapter-head, .triad, .reference-block, .making-strip, .works-layout, .artist-doc, .documentation-context, .strip-grid {
         grid-template-columns: 1fr;
       }
 
@@ -683,6 +750,12 @@
       }
 
       .strip-item:last-child { border-bottom: 0; }
+
+      .reference-image {
+        border-right: 0;
+        border-bottom: 1px solid var(--line2);
+        min-height: 260px;
+      }
     }
 
     @media (max-width: 520px) {
@@ -820,6 +893,24 @@
           </div>
         </div>
 
+        <div class="reference-block" aria-label="Historical rhyton visual reference">
+          <figure class="reference-image">
+            <img src="historical-rhyton-reference-padyar-takuk.jpg" alt="Historical rhyton reference image showing a golden animal-vessel form with a sculptural animal body and flared cup." />
+          </figure>
+          <div class="reference-content">
+            <span>Historical Reference</span>
+            <h3>A visual key to the animal-vessel form</h3>
+            <p>
+              This historical rhyton reference helps the viewer immediately understand the takuk/rhyton idea: an object where animal body, vessel opening, sculptural presence and ceremonial form become one.
+            </p>
+            <p>
+              It is included as a visual reference only. The contemporary works of Padyar Takuk are newly created artworks by Hadi Hafezi, not ancient objects or historical replicas.
+            </p>
+            <p class="persian" lang="fa">این تصویر به‌عنوان نمونه تاریخی و مرجع بصری آمده است تا مخاطب سریع‌تر فرم جانور-ظرف را درک کند. این اثر متعلق به پادیار تکوک نیست؛ آثار پادیار تکوک ساخته‌های معاصر هادی حافظی هستند.</p>
+            <p class="reference-note">Visual reference for education and context · Not a Padyar Takuk artwork</p>
+          </div>
+        </div>
+
         <div class="triad">
           <div class="triad-card">
             <div>
@@ -866,7 +957,7 @@
               The value of a takuk is not only in metal, weight or surface beauty. Its value is in the rare union of <strong>vessel, animal body, ritual flow and cultural memory</strong>.
             </p>
             <p>
-              A takuk is valuable because it turns a simple object into a symbolic body. The animal is not an ornament; it becomes part of the vessel’s identity. This is why a takuk should not be understood as tableware, souvenir, ordinary craft or decoration.
+              A takuk is valuable because it turns a simple object into a symbolic body. The animal is not an ornament; it becomes part of the vessel’s identity. Its vessel logic remains real, but it should not be reduced to everyday tableware, souvenir, ordinary craft or decoration.
             </p>
           </div>
         </div>
@@ -967,11 +1058,12 @@
             </article>
 
             <article class="work-row">
-              <img src="ram-head-rhyton-sold-archival-padyar-takuk.jpg" alt="Ram-Head Rhyton / Three Ram-Head Silver Cup, an archival contemporary silver animal-vessel work by Hadi Hafezi for Padyar Takuk, Isfahan, Iran." />
+              <img src="ram-head-rhyton-sold-archival-padyar-takuk.jpg" alt="Ram-Head Rhyton / Three Ram-Head Takuk, a contemporary Persian ram-head animal-vessel artwork by Hadi Hafezi for Padyar Takuk, Isfahan, Iran." />
               <div>
-                <span class="badge">Archival Work</span>
+                <span class="badge">Gallery Work</span>
                 <h3>Ram-Head Rhyton</h3>
-                <p>Three Ram-Head Silver Cup — an archival pure-silver animal-vessel work. Full public page not released yet; documentation is reserved for professional review.</p>
+                <p>A ram-head animal-vessel work of horn, ceremonial rhythm, guarded strength and contemporary Persian metalwork.</p>
+                <a class="viewing-room-link" href="ram-head-rhyton.html">Enter Viewing Room</a>
               </div>
             </article>
           </div>
@@ -987,7 +1079,7 @@
             <h2>Documentation, Authenticity & Private Review</h2>
           </div>
           <p>
-            The works are presented through contemporary-art language and careful documentation. The public website shows only reviewed public-safe material and protects the works from confusion with antiquities, archaeological objects, historical replicas, tableware, silverware or decorative vessels.
+            The works are presented through contemporary-art language and careful documentation. The public website shows only reviewed public-safe material and protects the works from confusion with antiquities, archaeological objects, historical replicas, ordinary tableware, silverware or decorative products.
           </p>
         </div>
 
