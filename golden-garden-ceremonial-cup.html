@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Golden Garden Ceremonial Cup / جام زرین گلستان | Padyar Takuk</title>
+  <meta
+    name="description"
+    content="Golden Garden Ceremonial Cup / جام زرین گلستان — a contemporary Iranian ceremonial metalwork by Padyar Takuk, with 24-karat gilding, floral and arabesque ornamentation, and a lidded ritual form."
+  />
+  <style>
+    :root {
+      --bg: #080807;
+      --panel: #12110f;
+      --panel-soft: #191713;
+      --text: #f3efe4;
+      --muted: #bfb6a4;
+      --gold: #c8a35a;
+      --gold-soft: #e1c37a;
+      --line: rgba(200, 163, 90, 0.28);
+      --shadow: rgba(0, 0, 0, 0.45);
+      --max: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(200, 163, 90, 0.10), transparent 32rem),
+        radial-gradient(circle at bottom right, rgba(200, 163, 90, 0.08), transparent 30rem),
+        var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(8, 8, 7, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(200, 163, 90, 0.18);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0.95rem 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .brand {
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      color: var(--gold-soft);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 0.9rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--text);
+      border-bottom-color: var(--gold);
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 4.6rem 1.2rem 2.2rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+      gap: 2.2rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      color: var(--gold-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+      font-size: 0.72rem;
+      margin: 0 0 0.85rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.15rem, 5vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+      color: var(--text);
+    }
+
+    .fa-title {
+      direction: rtl;
+      margin-top: 1rem;
+      font-size: clamp(1.45rem, 3.4vw, 2.8rem);
+      line-height: 1.25;
+      color: var(--gold-soft);
+      font-family: "Times New Roman", Georgia, serif;
+    }
+
+    .lead {
+      margin: 1.4rem 0 0;
+      max-width: 62ch;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .hero-card {
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(255,255,255,0.035), rgba(255,255,255,0.012));
+      border-radius: 28px;
+      padding: 0.72rem;
+      box-shadow: 0 24px 70px var(--shadow);
+    }
+
+    .hero-card img {
+      border-radius: 21px;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      background: #111;
+    }
+
+    .caption {
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin: 0.85rem 0.3rem 0.25rem;
+      text-align: center;
+    }
+
+    .section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2.2rem 1.2rem;
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015));
+      border-radius: 30px;
+      padding: clamp(1.25rem, 3vw, 2rem);
+      box-shadow: 0 20px 55px rgba(0,0,0,0.25);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 1.7rem;
+      align-items: start;
+    }
+
+    h2 {
+      margin: 0 0 0.9rem;
+      font-size: clamp(1.45rem, 2.6vw, 2.35rem);
+      line-height: 1.15;
+      color: var(--gold-soft);
+    }
+
+    h3 {
+      margin: 1.3rem 0 0.4rem;
+      font-size: 1.08rem;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0.75rem 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .fa {
+      direction: rtl;
+      text-align: right;
+      font-family: "Times New Roman", Georgia, serif;
+      color: #eee7d8;
+    }
+
+    .fa p,
+    .fa li {
+      color: #d9cfbd;
+    }
+
+    .info-list {
+      display: grid;
+      gap: 0.55rem;
+      margin: 1.1rem 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .info-list li {
+      border-top: 1px solid rgba(200, 163, 90, 0.18);
+      padding-top: 0.55rem;
+      color: var(--muted);
+    }
+
+    .info-list strong {
+      color: var(--gold-soft);
+      font-weight: normal;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1.2rem;
+      align-items: stretch;
+    }
+
+    .gallery figure {
+      margin: 0;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      overflow: hidden;
+      background: var(--panel);
+      box-shadow: 0 18px 45px rgba(0,0,0,0.28);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+    }
+
+    .gallery figcaption {
+      padding: 0.85rem 1rem 1rem;
+      color: var(--muted);
+      font-size: 0.84rem;
+      border-top: 1px solid rgba(200, 163, 90, 0.18);
+    }
+
+    .statement {
+      border-left: 3px solid var(--gold);
+      padding-left: 1.1rem;
+      color: var(--muted);
+    }
+
+    .button-row {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      margin-top: 1.4rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.72rem 1rem;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(200, 163, 90, 0.10);
+      transition: 180ms ease;
+      font-size: 0.92rem;
+    }
+
+    .button:hover {
+      border-color: rgba(225, 195, 122, 0.75);
+      background: rgba(200, 163, 90, 0.18);
+      transform: translateY(-1px);
+    }
+
+    .site-footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 2.5rem 1.2rem 3.4rem;
+      color: var(--muted);
+      border-top: 1px solid rgba(200, 163, 90, 0.18);
+      font-size: 0.88rem;
+    }
+
+    @media (max-width: 820px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 3.2rem;
+      }
+
+      .grid,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery img {
+        min-height: auto;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Padyar Takuk</a>
+      <div class="nav-links">
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#inquiry">Inquiry</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Contemporary Ceremonial Metalwork</p>
+        <h1>Golden Garden Ceremonial Cup</h1>
+        <div class="fa-title">جام زرین گلستان</div>
+        <p class="lead">
+          A contemporary Iranian ceremonial vessel with 24-karat gilding, floral and arabesque ornamentation, and a lidded ritual form. The work belongs to Padyar Takuk’s wider language of metal, memory, ceremony and refined hand-shaped presence.
+        </p>
+        <div class="button-row">
+          <a class="button" href="#text">Read the artwork text</a>
+          <a class="button" href="index.html#gallery">Back to gallery</a>
+        </div>
+      </div>
+
+      <figure class="hero-card">
+        <img
+          src="golden-garden-ceremonial-cup.png"
+          alt="Golden Garden Ceremonial Cup / جام زرین گلستان, a contemporary Iranian lidded ceremonial metalwork with 24-karat gilding and floral arabesque ornamentation."
+          onerror="this.onerror=null; this.src='golden-garden-ceremonial-cup.jpg';"
+        />
+        <figcaption class="caption">Primary view / نمای اصلی اثر</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" id="text">
+      <div class="panel grid">
+        <div>
+          <p class="eyebrow">Artwork position</p>
+          <h2>Not a decorative object, not tableware, not an antiquity.</h2>
+          <p class="muted">
+            Golden Garden Ceremonial Cup is presented as contemporary Iranian ceremonial metalwork. It should not be read as a utilitarian vessel, decorative cup, souvenir, historical replica, archaeological object or antique.
+          </p>
+          <ul class="info-list">
+            <li><strong>Persian title:</strong> جام زرین گلستان</li>
+            <li><strong>English title:</strong> Golden Garden Ceremonial Cup</li>
+            <li><strong>Material note:</strong> 24-karat gilding; base metal and surface technique to be recorded in the internal archive.</li>
+            <li><strong>Form:</strong> Pedestal cup, rounded body, lidded ceremonial structure, floral and arabesque ornamentation.</li>
+          </ul>
+        </div>
+
+        <div class="fa">
+          <p class="eyebrow">متن فارسی</p>
+          <h2>جام زرین گلستان</h2>
+          <p>
+            جام زرین گلستان اثری آیینی و معاصر از مجموعه پادیار تکوک است که زبان فلزکاری ایرانی را در قالب جامی پایه‌دار و درپوش‌دار ادامه می‌دهد. نقش‌های گل، برگ و اسلیمی بر سطح اثر، میان تاریکی زمینه و درخشش زرین فلز، فضایی شاهانه، آرام و تشریفاتی می‌سازند.
+          </p>
+          <p>
+            این اثر به‌عنوان فلزکاری فاخر معاصر ایرانی معرفی می‌شود؛ نه به‌عنوان ظرف مصرفی، جام دکوری، عتیقه، کپی تاریخی، سوغاتی یا شیء باستان‌شناسی.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Artwork images">
+      <div class="gallery">
+        <figure>
+          <img
+            src="golden-garden-ceremonial-cup.png"
+            alt="Golden Garden Ceremonial Cup shown with the lid placed beside the vessel."
+            onerror="this.onerror=null; this.src='golden-garden-ceremonial-cup.jpg';"
+          />
+          <figcaption>Open presentation view / نمای درپوش جدا</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="golden-garden-ceremonial-cup-closed.png"
+            alt="Golden Garden Ceremonial Cup shown closed with the lid placed on the vessel."
+            onerror="this.onerror=null; this.src='golden-garden-ceremonial-cup-closed.jpg';"
+          />
+          <figcaption>Closed lidded view / نمای درپوش بسته</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="panel">
+        <p class="eyebrow">Catalogue text</p>
+        <h2>Where metal becomes a ceremonial body.</h2>
+        <p class="statement">
+          In Golden Garden Ceremonial Cup, metal becomes a ceremonial body: upright, guarded and still. Floral and arabesque forms spread across the surface as if the metal were breathing inside a dark golden garden. The contrast of warm gilding and deep blackened recesses creates a balance between light and shadow, splendor and silence, ritual memory and material discipline.
+        </p>
+
+        <div class="fa">
+          <h3>متن کاتالوگی فارسی</h3>
+          <p>
+            در جام زرین گلستان، فلز به پیکره‌ای آیینی بدل می‌شود؛ نه صرفاً ظرفی برای نگاه، بلکه بدنی ایستاده، بسته، محافظ و تشریفاتی. گل‌ها و اسلیمی‌ها بر سطح اثر گسترده شده‌اند، گویی فلز در میان باغی تاریک و زرین نفس می‌کشد. درخشش طلا و عمق سیاهی زمینه، میان نور و سایه، شکوه و سکوت، آیین و ماده تعادل ایجاد می‌کند.
+          </p>
+          <p>
+            این اثر ادامه‌ای معاصر بر حافظه فلزکاری ایرانی است؛ اثری برای مشاهده، تأمل و نگهداری، نه برای مصرف روزمره و نه به‌عنوان بازسازی تاریخی.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="panel">
+        <p class="eyebrow">English website text</p>
+        <p class="muted">
+          Golden Garden Ceremonial Cup is a contemporary ceremonial vessel from Padyar Takuk. Its lidded form, pedestal base, floral reliefs, and arabesque ornamentation bring together the memory of Persian metalwork, ritual presence, and refined material discipline.
+        </p>
+        <p class="muted">
+          The work is not presented as an antiquity, historical replica, tableware, or decorative object. Instead, it continues the visual language of Iranian metalwork as a contemporary artwork. The warm gilded surface, dark recessed ground, and layered floral motifs create a sense of depth, stillness, and royal presence.
+        </p>
+
+        <div class="button-row">
+          <a class="button" href="index.html">Return to Padyar Takuk</a>
+          <a class="button" href="mailto:padyartakuk@gmail.com?subject=Inquiry%20about%20Golden%20Garden%20Ceremonial%20Cup">Inquiry</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Padyar Takuk — Contemporary Persian metalwork by Hadi Hafezi, Isfahan.
+    </p>
+    <p>
+      This work is a contemporary artwork. It is not an antiquity, archaeological object, historical replica, tableware or decorative product.
+    </p>
+  </footer>
+</body>
+</html>
