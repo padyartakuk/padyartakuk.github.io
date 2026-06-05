@@ -207,6 +207,32 @@
       max-width: 720px;
     }
 
+    .hero-tagline {
+      margin: 18px 0 14px;
+      color: var(--gold2);
+      font-size: clamp(1.34rem, 2.25vw, 2.05rem);
+      letter-spacing: 0.015em;
+      line-height: 1.16;
+    }
+
+    .hero-subtitle {
+      color: var(--text);
+      font-size: clamp(1.02rem, 1.28vw, 1.18rem);
+      max-width: 700px;
+      margin-top: 0;
+    }
+
+    .hero-persian {
+      direction: rtl;
+      text-align: right;
+      color: #dfd4bd;
+      border-right: 3px solid var(--gold);
+      padding-right: 14px;
+      margin: 22px 0 0;
+      max-width: 720px;
+      font-family: "Times New Roman", Georgia, serif;
+    }
+
     .guard-line {
       color: var(--gold2);
       border-left: 3px solid var(--gold);
@@ -360,7 +386,8 @@
     .reference-note { font-size: .86rem; color: var(--quiet); }
 
     .triad,
-    .making-strip {
+    .making-strip,
+    .integrity-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 14px;
@@ -369,6 +396,75 @@
 
     .making-strip {
       grid-template-columns: repeat(4, 1fr);
+    }
+
+    .integrity-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .integrity-statement {
+      border: 1px solid rgba(204, 163, 37, 0.34);
+      border-radius: 32px;
+      padding: clamp(22px, 3vw, 34px);
+      background:
+        radial-gradient(circle at 10% 0%, rgba(204,163,37,0.12), transparent 22rem),
+        linear-gradient(180deg, rgba(35,25,13,0.78), rgba(14,10,5,0.86));
+      box-shadow: 0 20px 60px var(--shadow);
+    }
+
+    .integrity-card {
+      border: 1px solid var(--line2);
+      border-radius: 24px;
+      padding: 20px;
+      background: rgba(255,255,255,0.025);
+    }
+
+    .integrity-card span {
+      display: block;
+      color: var(--gold2);
+      margin-bottom: 7px;
+    }
+
+    .technical-note {
+      font-size: 0.90rem;
+      color: var(--quiet);
+    }
+
+    .process-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .process-shot {
+      border: 1px solid var(--line2);
+      border-radius: 24px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.025);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.28);
+    }
+
+    .process-shot img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      background: #111;
+    }
+
+    .process-shot figcaption {
+      padding: 13px 15px 15px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.35;
+      border-top: 1px solid var(--line2);
+    }
+
+    .process-shot figcaption strong {
+      display: block;
+      color: var(--gold2);
+      margin-bottom: 3px;
+      font-weight: 500;
     }
 
     .triad-card,
@@ -601,6 +697,8 @@
       .triad,
       .reference-block,
       .making-strip,
+      .integrity-grid,
+      .process-gallery,
       .works-layout,
       .artist-doc,
       .documentation-context,
@@ -714,6 +812,10 @@
         height: 255px;
       }
 
+      .process-shot img {
+        height: 245px;
+      }
+
       .triad-card {
         min-height: auto;
       }
@@ -760,13 +862,15 @@
       <img class="logo-mark" src="padyar-takuk-lion-logo-gold-clean.png" alt="Padyar Takuk gold lion logo" />
       <div class="brandline">
         <strong>Padyar Takuk</strong>
-        <span>Contemporary Persian Takuk / Rhyton · Isfahan</span>
+        <span>Metal · Animal · Ritual · Isfahan</span>
       </div>
       <nav aria-label="Main navigation">
         <a href="index.html#home">Home</a>
         <a href="index.html#form">Takuk</a>
         <a href="index.html#works">Works</a>
         <a href="process.html">Process</a>
+        <a href="index.html#integrity">Integrity</a>
+        <a href="index.html#process-evidence">Evidence</a>
         <a href="index.html#documentation">Documentation</a>
         <a href="about.html">About</a>
         <a href="index.html#contact">Inquiry</a>
@@ -779,17 +883,22 @@
       <div>
         <img class="hero-emblem" src="padyar-takuk-lion-logo-gold-clean.png" alt="Padyar Takuk gold lion emblem" />
         <div class="kicker">Padyar Takuk · Isfahan</div>
-        <h1>Persian Takuk / Rhyton Artworks, Reimagined Today</h1>
-        <p class="lead">
-          Takuk is not an ordinary cup. It is a Persian animal-vessel form — between vessel, sculpture and ceremony — whose recognized Iranian examples reach back about 2,500 years.
+        <h1>Contemporary Persian Takuk / Rhyton Artworks</h1>
+        <div class="hero-tagline">Metal, Animal, Ritual — One Body.</div>
+        <p class="hero-subtitle">
+          A contemporary revival of the Persian takuk/rhyton through seamless, one-piece, hand-shaped metalwork by Hadi Hafezi in Isfahan.
         </p>
         <p class="lead">
-          After years of study, experimentation and gathering knowledge from old Iranian metalworking and sculptural traditions, Padyar Takuk revives this language today through seamless, one-piece metal artworks shaped by hand by Hadi Hafezi in Isfahan.
+          Takuk is not an ordinary cup. It is a Persian animal-vessel form — where vessel, animal, ritual memory, sculpture and metalwork become one.
         </p>
-        <p class="guard-line">A contemporary continuation of Persian animal-vessel metalwork, shaped by hand in Isfahan.</p>
+        <p class="hero-persian" lang="fa">
+          فلز، جانور، آیین؛ در یک بدن.<br />
+          احیای معاصر تکوک/ریتون ایرانی از راه فلزکاری یکپارچه، دست‌ساخته و بی‌درز.
+        </p>
+        <p class="guard-line">Newly created contemporary artworks — not antiquities, archaeological objects or historical replicas.</p>
         <div class="hero-actions">
-          <a class="button" href="#form">What is Takuk?</a>
-          <a class="button secondary" href="#works">View Artworks</a>
+          <a class="button" href="#works">View Artworks</a>
+          <a class="button secondary" href="#contact">Private Inquiry</a>
         </div>
       </div>
 
@@ -971,6 +1080,173 @@
             <div class="making-item"><strong>One body</strong><p>Animal and vessel remain continuous.</p></div>
             <div class="making-item"><strong>No mold / no weld</strong><p>No molds, seams, welding or assembly.</p></div>
             <div class="making-item"><strong>Material discipline</strong><p>Thickness, pressure, structure and identity are shaped together through the hand.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="integrity">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">Technique Integrity</div>
+            <h2>One sheet. One body. No seam.</h2>
+          </div>
+          <div>
+            <p class="large-text">
+              The principal Padyar Takuk animal-vessel works are not assembled from separate parts. Each work is shaped as a continuous metal body, where vessel and animal form remain materially and visually one.
+            </p>
+            <p>
+              This section is included so viewers can understand the technical standard behind the work before entering the viewing rooms.
+            </p>
+          </div>
+        </div>
+
+        <div class="integrity-statement">
+          <h3>Seamless one-piece hand-shaped metalwork</h3>
+          <p class="large-text">
+            Each principal takuk/rhyton begins from a single sheet of metal and is shaped entirely by hand into a seamless one-piece animal-vessel body — without molds, welding, seams, assembled parts, industrial machinery or modern production methods.
+          </p>
+          <p class="persian" lang="fa">
+            آثار اصلی تکوک/ریتون پادیار از یک ورق فلز آغاز می‌شوند و کاملاً با دست به بدنی یکپارچه و بی‌درز تبدیل می‌شوند؛ بدون قالب، بدون جوش، بدون درز، بدون مونتاژ و بدون تولید صنعتی.
+          </p>
+
+          <div class="integrity-grid" aria-label="One-piece technique verification points">
+            <div class="integrity-card">
+              <span>Single sheet</span>
+              <h3>One starting body</h3>
+              <p>The form begins from one sheet of metal, not from separate decorative parts attached later.</p>
+            </div>
+            <div class="integrity-card">
+              <span>No weld</span>
+              <h3>No joined construction</h3>
+              <p>The animal and vessel are not presented as welded or assembled elements; they are shaped into one continuous body.</p>
+            </div>
+            <div class="integrity-card">
+              <span>No seam</span>
+              <h3>Continuous surface</h3>
+              <p>The surface is understood as a unified metal body, where structure, curve, thickness and form are controlled by hand.</p>
+            </div>
+            <div class="integrity-card">
+              <span>Private review</span>
+              <h3>Technical records</h3>
+              <p>For serious professional inquiries, close-up images, process notes and technical records can be reviewed where available.</p>
+            </div>
+          </div>
+
+          <p class="technical-note">
+            Public pages remain concise. Detailed process documentation, raw high-resolution images and technical records are shared only within serious curatorial, gallery, collector or institutional review.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="process-evidence">
+      <div class="wrap">
+        <div class="chapter-head">
+          <div>
+            <div class="chapter-number">Process Evidence</div>
+            <h2>From sheet to body</h2>
+          </div>
+          <div>
+            <p class="large-text">
+              This process archive shows the Cassandane Rhyton in stages: source material, raised sheet, marked forming lines, hollow interior, unfinished intermediate states and polished silver development.
+            </p>
+            <p>
+              The images are presented as controlled web documentation of the hand-shaped process, supporting the Padyar Takuk standard of single-sheet, one-body, seamless metalwork.
+            </p>
+            <p class="persian" lang="fa">
+              این بخش مسیر شکل‌گیری ریتون کاساندان را نشان می‌دهد: از ماده خام و ورق شکل‌گرفته تا خطوط کنترل فرم، بدنه توخالی، مراحل ناتمام و مرحله نقره‌ای صیقل‌خورده.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Cassandane Rhyton — in-progress process archive</h3>
+          <p>
+            These images are included to help viewers understand that the work is not built as a decorative assembly, but gradually formed through hand pressure, hammering, raising, stretching, compression and repeated refinement.
+          </p>
+          <p class="technical-note">
+            Web images are optimized presentation copies. Raw high-resolution files and deeper technical records remain reserved for serious curatorial, gallery, collector or institutional review.
+          </p>
+
+          <div class="process-gallery" aria-label="Cassandane Rhyton process image archive">
+          <figure class="process-shot">
+            <img src="cassandane-process-01.jpg" alt="Cassandane Rhyton process documentation 01: Silver source material — archive reference." loading="lazy" />
+            <figcaption><strong>01</strong>Silver source material — archive reference</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-02.jpg" alt="Cassandane Rhyton process documentation 02: Raised sheet — early interior view." loading="lazy" />
+            <figcaption><strong>02</strong>Raised sheet — early interior view</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-03.jpg" alt="Cassandane Rhyton process documentation 03: Raised sheet — first body volume." loading="lazy" />
+            <figcaption><strong>03</strong>Raised sheet — first body volume</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-04.jpg" alt="Cassandane Rhyton process documentation 04: Heat / forming stage." loading="lazy" />
+            <figcaption><strong>04</strong>Heat / forming stage</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-05.jpg" alt="Cassandane Rhyton process documentation 05: Marked forming lines." loading="lazy" />
+            <figcaption><strong>05</strong>Marked forming lines</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-06.jpg" alt="Cassandane Rhyton process documentation 06: Unfinished intermediate form — side view." loading="lazy" />
+            <figcaption><strong>06</strong>Unfinished intermediate form — side view</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-07.jpg" alt="Cassandane Rhyton process documentation 07: Unfinished intermediate form — frontal view." loading="lazy" />
+            <figcaption><strong>07</strong>Unfinished intermediate form — frontal view</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-08.jpg" alt="Cassandane Rhyton process documentation 08: Marked body — side construction lines." loading="lazy" />
+            <figcaption><strong>08</strong>Marked body — side construction lines</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-09.jpg" alt="Cassandane Rhyton process documentation 09: Marked body — reverse construction lines." loading="lazy" />
+            <figcaption><strong>09</strong>Marked body — reverse construction lines</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-10.jpg" alt="Cassandane Rhyton process documentation 10: Head and upper body study." loading="lazy" />
+            <figcaption><strong>10</strong>Head and upper body study</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-11.jpg" alt="Cassandane Rhyton process documentation 11: Open hollow interior view." loading="lazy" />
+            <figcaption><strong>11</strong>Open hollow interior view</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-12.jpg" alt="Cassandane Rhyton process documentation 12: Unfinished-to-polished transition stage." loading="lazy" />
+            <figcaption><strong>12</strong>Unfinished-to-polished transition stage</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-13.jpg" alt="Cassandane Rhyton process documentation 13: Vertical body stage." loading="lazy" />
+            <figcaption><strong>13</strong>Vertical body stage</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-14.jpg" alt="Cassandane Rhyton process documentation 14: Curved animal-vessel body." loading="lazy" />
+            <figcaption><strong>14</strong>Curved animal-vessel body</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-15.jpg" alt="Cassandane Rhyton process documentation 15: Polished forming stage." loading="lazy" />
+            <figcaption><strong>15</strong>Polished forming stage</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-16.jpg" alt="Cassandane Rhyton process documentation 16: Refined side profile." loading="lazy" />
+            <figcaption><strong>16</strong>Refined side profile</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-17.jpg" alt="Cassandane Rhyton process documentation 17: Close-up of animal figure." loading="lazy" />
+            <figcaption><strong>17</strong>Close-up of animal figure</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-18.jpg" alt="Cassandane Rhyton process documentation 18: Polished animal-vessel form." loading="lazy" />
+            <figcaption><strong>18</strong>Polished animal-vessel form</figcaption>
+          </figure>
+          <figure class="process-shot">
+            <img src="cassandane-process-19.jpg" alt="Cassandane Rhyton process documentation 19: Final polished side profile." loading="lazy" />
+            <figcaption><strong>19</strong>Final polished side profile</figcaption>
+          </figure>
           </div>
         </div>
       </div>
