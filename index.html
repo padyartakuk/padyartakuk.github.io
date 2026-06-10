@@ -34,17 +34,17 @@
 
   <style>
     :root {
-      --bg: #070604;
-      --bg2: #0d0905;
-      --panel: rgba(22, 16, 9, 0.74);
-      --panel2: rgba(35, 25, 13, 0.82);
-      --text: #f5efe3;
-      --muted: #c7b896;
-      --quiet: #958665;
-      --gold: #CCA325;
-      --gold2: #ecd89a;
-      --line: rgba(204, 163, 37, 0.25);
-      --line2: rgba(204, 163, 37, 0.11);
+      --bg: #0d0b08;
+      --bg2: #15110d;
+      --panel: rgba(22, 16, 9, 0.62);
+      --panel2: rgba(35, 25, 13, 0.72);
+      --text: #f4efe6;
+      --muted: #cfc6b8;
+      --quiet: #9f927f;
+      --gold: #b68a42;
+      --gold2: #d1b06a;
+      --line: rgba(209, 176, 106, 0.22);
+      --line2: rgba(209, 176, 106, 0.11);
       --shadow: rgba(0, 0, 0, 0.58);
       --max: 1160px;
     }
@@ -55,7 +55,7 @@
 
     body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
         radial-gradient(circle at 50% -9%, rgba(204,163,37,0.16), transparent 34rem),
@@ -140,7 +140,12 @@
     }
 
     nav::-webkit-scrollbar { display: none; }
-    nav a { color: var(--muted); }
+    nav a {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-size: 0.72rem;
+    }
     nav a:hover { color: var(--gold2); }
 
     section {
@@ -177,18 +182,19 @@
 
     h1, h2, h3 {
       margin: 0;
-      font-weight: 500;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
       line-height: 1.08;
     }
 
     h1 {
       font-size: clamp(2.35rem, 6.2vw, 5.45rem);
-      letter-spacing: -0.058em;
+      letter-spacing: -0.035em;
     }
 
     h2 {
       font-size: clamp(2rem, 4.8vw, 3.85rem);
-      letter-spacing: -0.045em;
+      letter-spacing: -0.025em;
     }
 
     h3 {
@@ -200,6 +206,7 @@
     p {
       color: var(--muted);
       font-size: 1.04rem;
+      line-height: 1.75;
     }
 
     .lead {
@@ -230,7 +237,8 @@
       padding-right: 14px;
       margin: 22px 0 0;
       max-width: 720px;
-      font-family: "Times New Roman", Georgia, serif;
+      font-family: Tahoma, system-ui, sans-serif;
+      line-height: 1.9;
     }
 
     .guard-line {
@@ -255,8 +263,8 @@
       min-height: 34px;
       padding: 8px 12px;
       border: 1px solid rgba(204, 163, 37, 0.22);
-      border-radius: 999px;
-      background: rgba(204, 163, 37, 0.055);
+      border-radius: 2px;
+      background: rgba(204, 163, 37, 0.045);
       color: #d9cba9;
       font-size: 0.78rem;
       letter-spacing: 0.035em;
@@ -271,7 +279,7 @@
     .process-video-frame {
       margin-top: 20px;
       border: 1px solid rgba(204, 163, 37, 0.24);
-      border-radius: 28px;
+      border-radius: 18px;
       overflow: hidden;
       background:
         radial-gradient(circle at center, rgba(204,163,37,0.08), transparent 22rem),
@@ -298,11 +306,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 12px 16px;
-      border-radius: 999px;
+      padding: 13px 22px;
+      border-radius: 2px;
       border: 1px solid var(--line);
       color: var(--text);
-      background: rgba(204,163,37,0.10);
+      background: rgba(182,138,66,0.12);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.75rem;
       transition: 180ms ease;
     }
 
@@ -327,14 +338,14 @@
     }
 
     .hero-visual {
-      border-radius: 36px;
+      border-radius: 22px;
       overflow: hidden;
       padding: 18px;
     }
 
     .hero-visual img {
       width: 100%;
-      border-radius: 26px;
+      border-radius: 18px;
       aspect-ratio: 4 / 3;
       object-fit: cover;
       background: #111;
@@ -368,7 +379,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       border: 1px solid var(--line2);
-      border-radius: 30px;
+      border-radius: 18px;
       overflow: hidden;
       background: rgba(17,12,7,0.66);
     }
@@ -383,7 +394,7 @@
     .strip-item strong { display: block; color: var(--gold2); margin-bottom: 6px; }
 
     .chapter {
-      padding: 84px 0;
+      padding: clamp(72px, 9vw, 140px) 0;
     }
 
     .chapter-head {
@@ -400,14 +411,14 @@
     }
 
     .panel {
-      border-radius: 32px;
+      border-radius: 22px;
       padding: clamp(22px, 3vw, 34px);
     }
 
     .reference-block {
       display: grid;
       grid-template-columns: 0.92fr 1.08fr;
-      border-radius: 32px;
+      border-radius: 22px;
       overflow: hidden;
       margin-top: 32px;
     }
@@ -451,7 +462,7 @@
 
     .integrity-statement {
       border: 1px solid rgba(204, 163, 37, 0.34);
-      border-radius: 32px;
+      border-radius: 22px;
       padding: clamp(22px, 3vw, 34px);
       background:
         radial-gradient(circle at 10% 0%, rgba(204,163,37,0.12), transparent 22rem),
@@ -461,7 +472,7 @@
 
     .integrity-card {
       border: 1px solid var(--line2);
-      border-radius: 24px;
+      border-radius: 16px;
       padding: 20px;
       background: rgba(255,255,255,0.025);
     }
@@ -486,7 +497,7 @@
 
     .process-shot {
       border: 1px solid var(--line2);
-      border-radius: 24px;
+      border-radius: 16px;
       overflow: hidden;
       background: rgba(255,255,255,0.025);
       box-shadow: 0 14px 40px rgba(0,0,0,0.28);
@@ -517,7 +528,7 @@
     .triad-card,
     .making-item {
       border: 1px solid var(--line2);
-      border-radius: 24px;
+      border-radius: 16px;
       padding: 20px;
       background: rgba(255,255,255,0.025);
     }
@@ -532,7 +543,7 @@
     details {
       margin-top: 18px;
       border: 1px solid var(--line2);
-      border-radius: 24px;
+      border-radius: 16px;
       padding: 18px 20px;
       background: rgba(255,255,255,0.025);
     }
@@ -545,7 +556,8 @@
     .persian {
       direction: rtl;
       text-align: right;
-      font-family: "Times New Roman", Georgia, serif;
+      font-family: Tahoma, system-ui, sans-serif;
+      line-height: 1.9;
       color: #dfd4bd;
     }
 
@@ -558,7 +570,7 @@
     }
 
     .featured-work {
-      border-radius: 32px;
+      border-radius: 22px;
       overflow: hidden;
       position: sticky;
       top: 118px;
@@ -579,7 +591,7 @@
       max-width: 100%;
       max-height: 560px;
       object-fit: contain;
-      border-radius: 24px;
+      border-radius: 16px;
       box-shadow: 0 22px 60px rgba(0,0,0,0.30);
     }
 
@@ -594,7 +606,7 @@
     }
 
     .work-row {
-      border-radius: 26px;
+      border-radius: 18px;
       overflow: hidden;
       display: block;
     }
@@ -624,7 +636,7 @@
       margin-bottom: 7px;
       color: var(--quiet);
       border: 1px solid rgba(245,239,227,0.16);
-      border-radius: 999px;
+      border-radius: 2px;
       padding: 4px 9px;
       font-size: 0.72rem;
       letter-spacing: 0.08em;
@@ -650,7 +662,7 @@
     .ceremonial-card {
       border: 1px solid var(--line);
       background: linear-gradient(180deg, rgba(35,25,13,0.72), rgba(14,10,5,0.82));
-      border-radius: 32px;
+      border-radius: 22px;
       overflow: hidden;
       box-shadow: 0 20px 60px var(--shadow);
     }
@@ -683,7 +695,7 @@
 
     .document-image {
       border: 1px solid var(--line);
-      border-radius: 28px;
+      border-radius: 18px;
       overflow: hidden;
       background: rgba(24,18,10,0.52);
       box-shadow: 0 20px 60px var(--shadow);
@@ -738,6 +750,50 @@
       padding-top: 22px;
     }
 
+
+    .soft-document-section h2 {
+      font-size: clamp(1.65rem, 3.4vw, 2.65rem);
+    }
+
+    .soft-document-section .documentation-context {
+      opacity: 0.92;
+    }
+
+    .soft-document-section .document-image {
+      box-shadow: 0 14px 42px rgba(0, 0, 0, 0.34);
+    }
+
+    .inquiry-options {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin: 24px auto;
+      max-width: 980px;
+      text-align: left;
+    }
+
+    .inquiry-option {
+      border: 1px solid var(--line2);
+      background: rgba(255,255,255,0.025);
+      padding: 18px;
+      border-radius: 12px;
+    }
+
+    .inquiry-option strong {
+      display: block;
+      color: var(--gold2);
+      margin-bottom: 7px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+    }
+
+    .inquiry-option span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
     @media (max-width: 900px) {
       .hero,
       .chapter-head,
@@ -750,7 +806,8 @@
       .artist-doc,
       .documentation-context,
       .strip-grid,
-      .ceremonial-layout {
+      .ceremonial-layout,
+      .inquiry-options {
         grid-template-columns: 1fr;
       }
 
@@ -824,7 +881,7 @@
       }
 
       .strip-grid {
-        border-radius: 24px;
+        border-radius: 16px;
       }
 
       .strip-item {
@@ -881,7 +938,9 @@
       }
     }
 
-    /* Draft 5 Luxe continuation · 2026-06 website credibility upgrade. */
+    /* Luxury visual patch · limited, public-safe update.
+       WIPO section retained; visual weight reduced.
+       Process video placeholder removed until web-safe assets are ready. */
   </style>
 
   <script type="application/ld+json">
@@ -922,12 +981,8 @@
       </div>
       <nav aria-label="Main navigation">
         <a href="index.html#home">Home</a>
-        <a href="index.html#form">Takuk</a>
         <a href="index.html#works">Works</a>
         <a href="process.html">Process</a>
-        <a href="index.html#process-study">Study</a>
-        <a href="index.html#integrity">Integrity</a>
-        <a href="index.html#process-evidence">Evidence</a>
         <a href="index.html#documentation">Documentation</a>
         <a href="about.html">About</a>
         <a href="index.html#contact">Inquiry</a>
@@ -969,7 +1024,7 @@
       </div>
 
       <div class="hero-visual">
-        <img src="guardian-falcon-contemporary-persian-takuk-rhyton-padyar-takuk.jpg" alt="Guardian Falcon, a contemporary Persian takuk/rhyton hand-shaped by Hadi Hafezi for Padyar Takuk in Isfahan, Iran." />
+        <img src="guardian-falcon-contemporary-persian-takuk-rhyton-padyar-takuk.jpg" alt="Guardian Falcon, contemporary Persian takuk/rhyton by Hadi Hafezi, frontal view." />
         <div class="hero-caption">Guardian Falcon · Contemporary Persian Takuk / Rhyton</div>
       </div>
     </section>
@@ -986,7 +1041,7 @@
       </div>
     </section>
 
-    <section class="chapter" id="wipo-proof">
+    <section class="chapter soft-document-section" id="wipo-proof">
       <div class="wrap">
         <div class="chapter-head">
           <div>
@@ -1233,22 +1288,8 @@
             The moving image should be read as a controlled visual study of material transformation: hand pressure, hammering rhythm, surface response and the slow emergence of form.
           </p>
 
-          <div class="process-video-frame">
-            <video
-              controls
-              muted
-              playsinline
-              preload="metadata"
-              poster="padyar-process-study-web-safe-poster.jpg"
-              aria-label="Padyar Takuk process study video: hand-shaped metalwork, hammering rhythm and material transformation"
-            >
-              <source src="padyar-process-study-web-safe.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-
           <p class="technical-note">
-            Upload required before publishing this section: padyar-process-study-web-safe.mp4 and padyar-process-study-web-safe-poster.jpg. Use only public-safe video material with confirmed usage rights.
+            Process video documentation is reserved for professional review. Public video will be added only after the web-safe video file and poster image are finalized.
           </p>
         </div>
       </div>
@@ -1400,7 +1441,7 @@
           <div class="works-list">
             <article class="work-row">
               <a href="guardian-falcon.html">
-                <img src="guardian-falcon-contemporary-persian-takuk-rhyton-padyar-takuk.jpg" alt="Guardian Falcon, a contemporary Persian takuk/rhyton hand-shaped by Hadi Hafezi for Padyar Takuk in Isfahan, Iran." />
+                <img src="guardian-falcon-contemporary-persian-takuk-rhyton-padyar-takuk.jpg" alt="Guardian Falcon, contemporary Persian takuk/rhyton by Hadi Hafezi, frontal view." />
               </a>
               <div>
                 <span class="badge">Gallery Work</span>
@@ -1585,6 +1626,25 @@
         <p>
           For curatorial, gallery, collector and cultural inquiries, please contact Padyar Takuk directly. Public pages remain concise and museum-like; selected documentation can be shared only within serious professional review.
         </p>
+        <div class="inquiry-options" aria-label="Inquiry guidance">
+          <div class="inquiry-option">
+            <strong>Gallery / Curatorial Inquiry</strong>
+            <span>Suggested subject: Padyar Takuk — Curatorial Review Request</span>
+          </div>
+          <div class="inquiry-option">
+            <strong>Collector Inquiry</strong>
+            <span>Suggested subject: Padyar Takuk — Private Artwork Review</span>
+          </div>
+          <div class="inquiry-option">
+            <strong>Residency / Institutional Inquiry</strong>
+            <span>Suggested subject: Padyar Takuk — Institutional / Residency Inquiry</span>
+          </div>
+        </div>
+
+        <p>
+          Please include your name, organization, country and purpose of inquiry.
+        </p>
+
         <p>
           <a class="button" href="mailto:hafzyhady348@gmail.com?subject=Padyar%20Takuk%20%E2%80%93%20Private%20Review%20Material%20Request">Request Private Review Material</a>
         </p>
